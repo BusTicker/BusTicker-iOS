@@ -14,6 +14,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *secondTimeLabel;
 
 @property (strong, nonatomic) IBOutlet UILabel *routeNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *stopIDLabel;
+@property (strong, nonatomic) IBOutlet UILabel *distanceToStopLabel;
 
 @end
 
