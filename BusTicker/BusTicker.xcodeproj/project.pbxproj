@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D438C87B190C173C0021836B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87A190C173C0021836B /* Foundation.framework */; };
+		D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87C190C173C0021836B /* CoreGraphics.framework */; };
+		D438C87F190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
+		D438C885190C173C0021836B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D438C883190C173C0021836B /* InfoPlist.strings */; };
+		D438C887190C173C0021836B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C886190C173C0021836B /* main.m */; };
+		D438C88B190C173C0021836B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C88A190C173C0021836B /* AppDelegate.m */; };
+		D438C88E190C173C0021836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D438C88C190C173C0021836B /* Main.storyboard */; };
+		D438C891190C173C0021836B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C890190C173C0021836B /* ViewController.m */; };
+		D438C893190C173C0021836B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D438C892190C173C0021836B /* Images.xcassets */; };
+		D438C89A190C173C0021836B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C899190C173C0021836B /* XCTest.framework */; };
+		D438C89B190C173C0021836B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87A190C173C0021836B /* Foundation.framework */; };
+		D438C89C190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
+		D438C8A4190C173C0021836B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D438C8A2190C173C0021836B /* InfoPlist.strings */; };
+		D438C8A6190C173C0021836B /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C8A5190C173C0021836B /* BusTickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D438C89D190C173C0021836B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D438C86F190C173C0021836B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D438C876190C173C0021836B;
+			remoteInfo = BusTicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D438C877190C173C0021836B /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D438C87A190C173C0021836B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D438C87C190C173C0021836B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D438C87E190C173C0021836B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D438C882190C173C0021836B /* BusTicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusTicker-Info.plist"; sourceTree = "<group>"; };
+		D438C884190C173C0021836B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D438C886190C173C0021836B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D438C888190C173C0021836B /* BusTicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusTicker-Prefix.pch"; sourceTree = "<group>"; };
+		D438C889190C173C0021836B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D438C88A190C173C0021836B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D438C88D190C173C0021836B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D438C88F190C173C0021836B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D438C890190C173C0021836B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D438C892190C173C0021836B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D438C898190C173C0021836B /* BusTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D438C899190C173C0021836B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D438C8A1190C173C0021836B /* BusTickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusTickerTests-Info.plist"; sourceTree = "<group>"; };
+		D438C8A3190C173C0021836B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D438C8A5190C173C0021836B /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D438C874190C173C0021836B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */,
+				D438C87F190C173C0021836B /* UIKit.framework in Frameworks */,
+				D438C87B190C173C0021836B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D438C895190C173C0021836B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D438C89A190C173C0021836B /* XCTest.framework in Frameworks */,
+				D438C89C190C173C0021836B /* UIKit.framework in Frameworks */,
+				D438C89B190C173C0021836B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D438C86E190C173C0021836B = {
+			isa = PBXGroup;
+			children = (
+				D438C880190C173C0021836B /* BusTicker */,
+				D438C89F190C173C0021836B /* BusTickerTests */,
+				D438C879190C173C0021836B /* Frameworks */,
+				D438C878190C173C0021836B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D438C878190C173C0021836B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D438C877190C173C0021836B /* BusTicker.app */,
+				D438C898190C173C0021836B /* BusTickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D438C879190C173C0021836B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D438C87A190C173C0021836B /* Foundation.framework */,
+				D438C87C190C173C0021836B /* CoreGraphics.framework */,
+				D438C87E190C173C0021836B /* UIKit.framework */,
+				D438C899190C173C0021836B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D438C880190C173C0021836B /* BusTicker */ = {
+			isa = PBXGroup;
+			children = (
+				D438C889190C173C0021836B /* AppDelegate.h */,
+				D438C88A190C173C0021836B /* AppDelegate.m */,
+				D438C88C190C173C0021836B /* Main.storyboard */,
+				D438C88F190C173C0021836B /* ViewController.h */,
+				D438C890190C173C0021836B /* ViewController.m */,
+				D438C892190C173C0021836B /* Images.xcassets */,
+				D438C881190C173C0021836B /* Supporting Files */,
+			);
+			path = BusTicker;
+			sourceTree = "<group>";
+		};
+		D438C881190C173C0021836B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D438C882190C173C0021836B /* BusTicker-Info.plist */,
+				D438C883190C173C0021836B /* InfoPlist.strings */,
+				D438C886190C173C0021836B /* main.m */,
+				D438C888190C173C0021836B /* BusTicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D438C89F190C173C0021836B /* BusTickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D438C8A5190C173C0021836B /* BusTickerTests.m */,
+				D438C8A0190C173C0021836B /* Supporting Files */,
+			);
+			path = BusTickerTests;
+			sourceTree = "<group>";
+		};
+		D438C8A0190C173C0021836B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D438C8A1190C173C0021836B /* BusTickerTests-Info.plist */,
+				D438C8A2190C173C0021836B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D438C876190C173C0021836B /* BusTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D438C8A9190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTicker" */;
+			buildPhases = (
+				D438C873190C173C0021836B /* Sources */,
+				D438C874190C173C0021836B /* Frameworks */,
+				D438C875190C173C0021836B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusTicker;
+			productName = BusTicker;
+			productReference = D438C877190C173C0021836B /* BusTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D438C897190C173C0021836B /* BusTickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D438C8AC190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTickerTests" */;
+			buildPhases = (
+				D438C894190C173C0021836B /* Sources */,
+				D438C895190C173C0021836B /* Frameworks */,
+				D438C896190C173C0021836B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D438C89E190C173C0021836B /* PBXTargetDependency */,
+			);
+			name = BusTickerTests;
+			productName = BusTickerTests;
+			productReference = D438C898190C173C0021836B /* BusTickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D438C86F190C173C0021836B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = HardwareHackMKE;
+				TargetAttributes = {
+					D438C897190C173C0021836B = {
+						TestTargetID = D438C876190C173C0021836B;
+					};
+				};
+			};
+			buildConfigurationList = D438C872190C173C0021836B /* Build configuration list for PBXProject "BusTicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D438C86E190C173C0021836B;
+			productRefGroup = D438C878190C173C0021836B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D438C876190C173C0021836B /* BusTicker */,
+				D438C897190C173C0021836B /* BusTickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D438C875190C173C0021836B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D438C893190C173C0021836B /* Images.xcassets in Resources */,
+				D438C885190C173C0021836B /* InfoPlist.strings in Resources */,
+				D438C88E190C173C0021836B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D438C896190C173C0021836B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D438C8A4190C173C0021836B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D438C873190C173C0021836B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D438C891190C173C0021836B /* ViewController.m in Sources */,
+				D438C88B190C173C0021836B /* AppDelegate.m in Sources */,
+				D438C887190C173C0021836B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D438C894190C173C0021836B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D438C8A6190C173C0021836B /* BusTickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D438C89E190C173C0021836B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D438C876190C173C0021836B /* BusTicker */;
+			targetProxy = D438C89D190C173C0021836B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D438C883190C173C0021836B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D438C884190C173C0021836B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D438C88C190C173C0021836B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D438C88D190C173C0021836B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D438C8A2190C173C0021836B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D438C8A3190C173C0021836B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D438C8A7190C173C0021836B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D438C8A8190C173C0021836B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D438C8AA190C173C0021836B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
+				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D438C8AB190C173C0021836B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
+				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D438C8AD190C173C0021836B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BusTickerTests/BusTickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D438C8AE190C173C0021836B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
+				INFOPLIST_FILE = "BusTickerTests/BusTickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D438C872190C173C0021836B /* Build configuration list for PBXProject "BusTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D438C8A7190C173C0021836B /* Debug */,
+				D438C8A8190C173C0021836B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D438C8A9190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D438C8AA190C173C0021836B /* Debug */,
+				D438C8AB190C173C0021836B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D438C8AC190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D438C8AD190C173C0021836B /* Debug */,
+				D438C8AE190C173C0021836B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D438C86F190C173C0021836B /* Project object */;
+}
