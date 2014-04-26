@@ -96,6 +96,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop 4202" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTG-tF-amc">
+                                <rect key="frame" x="20" y="405" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zn3-Rd-NMN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.80784313730000001" green="0.79215686269999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120 ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lP-jD-8gP">
+                                <rect key="frame" x="20" y="434" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="vBu-tW-5pA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.80784313730000001" green="0.79215686269999996" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.41568627450000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -108,11 +128,17 @@
                             <constraint firstItem="6gl-0W-DVi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="H2y-cL-h5Y"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hS2-uj-npZ" secondAttribute="bottom" constant="20" id="M3m-hQ-o3o"/>
                             <constraint firstItem="7Cj-5y-goy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="174" id="MbW-pz-XOM"/>
+                            <constraint firstItem="7lP-jD-8gP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="NVC-Vh-vwm"/>
+                            <constraint firstItem="vTG-tF-amc" firstAttribute="top" secondItem="6gl-0W-DVi" secondAttribute="bottom" constant="8" id="NhA-ka-ma3"/>
                             <constraint firstItem="bxs-RV-pWo" firstAttribute="top" secondItem="ofP-da-h0S" secondAttribute="bottom" constant="8" id="TrS-YC-uHL"/>
+                            <constraint firstAttribute="trailing" secondItem="vTG-tF-amc" secondAttribute="trailing" constant="20" id="UIA-nR-DOH"/>
                             <constraint firstItem="bxs-RV-pWo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="XOt-pX-h33"/>
                             <constraint firstAttribute="trailing" secondItem="hS2-uj-npZ" secondAttribute="trailing" constant="20" id="cSY-B9-7Ba"/>
+                            <constraint firstItem="vTG-tF-amc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gqS-iy-ns7"/>
                             <constraint firstAttribute="trailing" secondItem="7Cj-5y-goy" secondAttribute="trailing" constant="20" id="h5m-fb-tbA"/>
+                            <constraint firstItem="7lP-jD-8gP" firstAttribute="top" secondItem="vTG-tF-amc" secondAttribute="bottom" constant="8" id="lJb-2z-ChT"/>
                             <constraint firstItem="ekz-Wb-9Rt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="284" id="mAK-qH-JeH"/>
+                            <constraint firstAttribute="trailing" secondItem="7lP-jD-8gP" secondAttribute="trailing" constant="20" id="mhB-5a-L8F"/>
                             <constraint firstAttribute="trailing" secondItem="6gl-0W-DVi" secondAttribute="trailing" constant="20" id="q7o-17-uNk"/>
                             <constraint firstAttribute="trailing" secondItem="pJR-ju-FJ9" secondAttribute="trailing" constant="20" id="t9e-aW-Wqf"/>
                             <constraint firstAttribute="trailing" secondItem="bxs-RV-pWo" secondAttribute="trailing" constant="85" id="tM4-Mn-HGU"/>
@@ -120,9 +146,11 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="distanceToStopLabel" destination="7lP-jD-8gP" id="enr-2D-WbO"/>
                         <outlet property="firstTimeLabel" destination="ofP-da-h0S" id="HuE-lk-Qm7"/>
                         <outlet property="routeNameLabel" destination="6gl-0W-DVi" id="d2E-Wp-Fkw"/>
                         <outlet property="secondTimeLabel" destination="bxs-RV-pWo" id="fq0-eg-efV"/>
+                        <outlet property="stopIDLabel" destination="vTG-tF-amc" id="6n5-s1-qZm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
