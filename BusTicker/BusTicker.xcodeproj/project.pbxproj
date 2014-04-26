@@ -14,13 +14,15 @@
 		D438C887190C173C0021836B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C886190C173C0021836B /* main.m */; };
 		D438C88B190C173C0021836B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C88A190C173C0021836B /* AppDelegate.m */; };
 		D438C88E190C173C0021836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D438C88C190C173C0021836B /* Main.storyboard */; };
-		D438C891190C173C0021836B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C890190C173C0021836B /* ViewController.m */; };
+		D438C891190C173C0021836B /* BusTickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C890190C173C0021836B /* BusTickerViewController.m */; };
 		D438C893190C173C0021836B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D438C892190C173C0021836B /* Images.xcassets */; };
 		D438C89A190C173C0021836B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C899190C173C0021836B /* XCTest.framework */; };
 		D438C89B190C173C0021836B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87A190C173C0021836B /* Foundation.framework */; };
 		D438C89C190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
 		D438C8A4190C173C0021836B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D438C8A2190C173C0021836B /* InfoPlist.strings */; };
 		D438C8A6190C173C0021836B /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C8A5190C173C0021836B /* BusTickerTests.m */; };
+		D4FD6DA7190C3E1A00C577EE /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA5190C3E1A00C577EE /* favorite.png */; };
+		D4FD6DA8190C3E1A00C577EE /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA6190C3E1A00C577EE /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,16 @@
 		D438C889190C173C0021836B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D438C88A190C173C0021836B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D438C88D190C173C0021836B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D438C88F190C173C0021836B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D438C890190C173C0021836B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D438C88F190C173C0021836B /* BusTickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusTickerViewController.h; sourceTree = "<group>"; };
+		D438C890190C173C0021836B /* BusTickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerViewController.m; sourceTree = "<group>"; };
 		D438C892190C173C0021836B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D438C898190C173C0021836B /* BusTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D438C899190C173C0021836B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D438C8A1190C173C0021836B /* BusTickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusTickerTests-Info.plist"; sourceTree = "<group>"; };
 		D438C8A3190C173C0021836B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D438C8A5190C173C0021836B /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
+		D4FD6DA5190C3E1A00C577EE /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		D4FD6DA6190C3E1A00C577EE /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +116,12 @@
 		D438C880190C173C0021836B /* BusTicker */ = {
 			isa = PBXGroup;
 			children = (
+				D4FD6DA4190C3E1A00C577EE /* resources */,
 				D438C889190C173C0021836B /* AppDelegate.h */,
 				D438C88A190C173C0021836B /* AppDelegate.m */,
 				D438C88C190C173C0021836B /* Main.storyboard */,
-				D438C88F190C173C0021836B /* ViewController.h */,
-				D438C890190C173C0021836B /* ViewController.m */,
+				D438C88F190C173C0021836B /* BusTickerViewController.h */,
+				D438C890190C173C0021836B /* BusTickerViewController.m */,
 				D438C892190C173C0021836B /* Images.xcassets */,
 				D438C881190C173C0021836B /* Supporting Files */,
 			);
@@ -150,6 +155,15 @@
 				D438C8A2190C173C0021836B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4FD6DA4190C3E1A00C577EE /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4FD6DA5190C3E1A00C577EE /* favorite.png */,
+				D4FD6DA6190C3E1A00C577EE /* map.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +245,8 @@
 				D438C893190C173C0021836B /* Images.xcassets in Resources */,
 				D438C885190C173C0021836B /* InfoPlist.strings in Resources */,
 				D438C88E190C173C0021836B /* Main.storyboard in Resources */,
+				D4FD6DA7190C3E1A00C577EE /* favorite.png in Resources */,
+				D4FD6DA8190C3E1A00C577EE /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D438C891190C173C0021836B /* ViewController.m in Sources */,
+				D438C891190C173C0021836B /* BusTickerViewController.m in Sources */,
 				D438C88B190C173C0021836B /* AppDelegate.m in Sources */,
 				D438C887190C173C0021836B /* main.m in Sources */,
 			);
@@ -456,6 +472,7 @@
 				D438C8AB190C173C0021836B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D438C8AC190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTickerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +481,7 @@
 				D438C8AE190C173C0021836B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
