@@ -21,6 +21,14 @@
 		D438C89C190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
 		D438C8A4190C173C0021836B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D438C8A2190C173C0021836B /* InfoPlist.strings */; };
 		D438C8A6190C173C0021836B /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C8A5190C173C0021836B /* BusTickerTests.m */; };
+		D485CC5C190C53EE006D0735 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC5A190C53EE006D0735 /* PebbleKit.framework */; };
+		D485CC5D190C53EE006D0735 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC5B190C53EE006D0735 /* PebbleVendor.framework */; };
+		D485CC5F190C5462006D0735 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC5E190C5462006D0735 /* libz.dylib */; };
+		D485CC61190C546C006D0735 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC60190C546C006D0735 /* ExternalAccessory.framework */; };
+		D485CC63190C5475006D0735 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC62190C5475006D0735 /* CoreBluetooth.framework */; };
+		D485CC65190C547C006D0735 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC64190C547C006D0735 /* CoreMotion.framework */; };
+		D485CC67190C5483006D0735 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC66190C5483006D0735 /* CFNetwork.framework */; };
+		D485CC69190C548B006D0735 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC68190C548B006D0735 /* MessageUI.framework */; };
 		D4FD6DA7190C3E1A00C577EE /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA5190C3E1A00C577EE /* favorite.png */; };
 		D4FD6DA8190C3E1A00C577EE /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA6190C3E1A00C577EE /* map.png */; };
 /* End PBXBuildFile section */
@@ -55,6 +63,14 @@
 		D438C8A1190C173C0021836B /* BusTickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusTickerTests-Info.plist"; sourceTree = "<group>"; };
 		D438C8A3190C173C0021836B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D438C8A5190C173C0021836B /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
+		D485CC5A190C53EE006D0735 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = BusTicker/PebbleKit.framework; sourceTree = "<group>"; };
+		D485CC5B190C53EE006D0735 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = BusTicker/PebbleVendor.framework; sourceTree = "<group>"; };
+		D485CC5E190C5462006D0735 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D485CC60190C546C006D0735 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		D485CC62190C5475006D0735 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D485CC64190C547C006D0735 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D485CC66190C5483006D0735 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D485CC68190C548B006D0735 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D4FD6DA5190C3E1A00C577EE /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		D4FD6DA6190C3E1A00C577EE /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +80,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D485CC69190C548B006D0735 /* MessageUI.framework in Frameworks */,
+				D485CC67190C5483006D0735 /* CFNetwork.framework in Frameworks */,
+				D485CC65190C547C006D0735 /* CoreMotion.framework in Frameworks */,
+				D485CC63190C5475006D0735 /* CoreBluetooth.framework in Frameworks */,
+				D485CC61190C546C006D0735 /* ExternalAccessory.framework in Frameworks */,
+				D485CC5F190C5462006D0735 /* libz.dylib in Frameworks */,
 				D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */,
+				D485CC5D190C53EE006D0735 /* PebbleVendor.framework in Frameworks */,
+				D485CC5C190C53EE006D0735 /* PebbleKit.framework in Frameworks */,
 				D438C87F190C173C0021836B /* UIKit.framework in Frameworks */,
 				D438C87B190C173C0021836B /* Foundation.framework in Frameworks */,
 			);
@@ -105,6 +129,14 @@
 		D438C879190C173C0021836B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D485CC68190C548B006D0735 /* MessageUI.framework */,
+				D485CC66190C5483006D0735 /* CFNetwork.framework */,
+				D485CC64190C547C006D0735 /* CoreMotion.framework */,
+				D485CC62190C5475006D0735 /* CoreBluetooth.framework */,
+				D485CC60190C546C006D0735 /* ExternalAccessory.framework */,
+				D485CC5E190C5462006D0735 /* libz.dylib */,
+				D485CC5A190C53EE006D0735 /* PebbleKit.framework */,
+				D485CC5B190C53EE006D0735 /* PebbleVendor.framework */,
 				D438C87A190C173C0021836B /* Foundation.framework */,
 				D438C87C190C173C0021836B /* CoreGraphics.framework */,
 				D438C87E190C173C0021836B /* UIKit.framework */,
@@ -213,6 +245,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = HardwareHackMKE;
 				TargetAttributes = {
+					D438C876190C173C0021836B = {
+						DevelopmentTeam = 696JWCZD9Y;
+					};
 					D438C897190C173C0021836B = {
 						TestTargetID = D438C876190C173C0021836B;
 					};
@@ -351,6 +386,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -382,6 +418,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -392,6 +429,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BusTicker",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
@@ -405,6 +447,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BusTicker",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
