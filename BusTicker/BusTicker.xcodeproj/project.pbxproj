@@ -50,7 +50,7 @@
 		1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		26210327190CA84B00B00726 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		26210328190CA84B00B00726 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
-		D438C877190C173C0021836B /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D438C877190C173C0021836B /* BusTickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D438C87A190C173C0021836B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D438C87C190C173C0021836B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D438C87E190C173C0021836B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -130,7 +130,7 @@
 		D438C878190C173C0021836B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D438C877190C173C0021836B /* BusTicker.app */,
+				D438C877190C173C0021836B /* BusTickr.app */,
 				D438C898190C173C0021836B /* BusTickerTests.xctest */,
 			);
 			name = Products;
@@ -232,7 +232,7 @@
 			);
 			name = BusTicker;
 			productName = BusTicker;
-			productReference = D438C877190C173C0021836B /* BusTicker.app */;
+			productReference = D438C877190C173C0021836B /* BusTickr.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D438C897190C173C0021836B /* BusTickerTests */ = {
@@ -263,7 +263,7 @@
 				ORGANIZATIONNAME = HardwareHackMKE;
 				TargetAttributes = {
 					D438C876190C173C0021836B = {
-						DevelopmentTeam = M3FCT79SM9;
+						DevelopmentTeam = 696JWCZD9Y;
 					};
 					D438C897190C173C0021836B = {
 						TestTargetID = D438C876190C173C0021836B;
@@ -493,8 +493,8 @@
 				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "07C4BCCB-EB2E-486C-A9F1-0AEEC702CDB0";
+				PRODUCT_NAME = BusTickr;
+				PROVISIONING_PROFILE = "6D9CD7E3-96C7-44BB-9502-86CF540F27E0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -515,8 +515,8 @@
 				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "07C4BCCB-EB2E-486C-A9F1-0AEEC702CDB0";
+				PRODUCT_NAME = BusTickr;
+				PROVISIONING_PROFILE = "6D9CD7E3-96C7-44BB-9502-86CF540F27E0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

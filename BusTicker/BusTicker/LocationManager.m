@@ -147,8 +147,10 @@
     }
     else if (status == kCLAuthorizationStatusAuthorized) {
         //[self stopUpdatingLocation];
+        NSLog(@"Authorized");
     }
     else if (status == kCLAuthorizationStatusNotDetermined) {
+        NSLog(@"Not determined");
     }
     
 }
