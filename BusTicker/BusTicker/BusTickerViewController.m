@@ -8,13 +8,13 @@
 
 #import "BusTickerViewController.h"
 #import "BusMapViewController.h"
+#import "LocationManager.h"
 #import "AppDelegate.h"
 
 #define SYNC_KEY_ROUTE 0
 #define SYNC_KEY_STOP 1
 #define SYNC_KEY_FIRST_TIME 2
 #define SYNC_KEY_SECOND_TIME 3
-
 
 @interface BusTickerViewController ()
 
@@ -35,16 +35,24 @@
 
 @implementation BusTickerViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self setNeedsStatusBarAppearanceUpdate];
+    
+    LocationManager *locationManager = [[LocationManager alloc] init];
+    [locationManager updateLocationWithCompletionBlock:^(CLLocation *location, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+        else {
+            NSLog(@"Location: %0.7f, %0.7f", location.coordinate.latitude, location.coordinate.longitude);
+        }
+    }];
 
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

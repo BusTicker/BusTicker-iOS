@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26210329190CA84B00B00726 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26210328190CA84B00B00726 /* LocationManager.m */; };
 		D438C87B190C173C0021836B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87A190C173C0021836B /* Foundation.framework */; };
 		D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87C190C173C0021836B /* CoreGraphics.framework */; };
 		D438C87F190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26210327190CA84B00B00726 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		26210328190CA84B00B00726 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		D438C877190C173C0021836B /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D438C87A190C173C0021836B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D438C87C190C173C0021836B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,6 +160,7 @@
 		D438C880190C173C0021836B /* BusTicker */ = {
 			isa = PBXGroup;
 			children = (
+				D438C881190C173C0021836B /* Supporting Files */,
 				D4FD6DA4190C3E1A00C577EE /* resources */,
 				D438C889190C173C0021836B /* AppDelegate.h */,
 				D438C88A190C173C0021836B /* AppDelegate.m */,
@@ -166,7 +170,8 @@
 				D438C890190C173C0021836B /* BusTickerViewController.m */,
 				D4B0BD75190C91D5003A4EBB /* BusMapViewController.h */,
 				D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */,
-				D438C881190C173C0021836B /* Supporting Files */,
+				26210327190CA84B00B00726 /* LocationManager.h */,
+				26210328190CA84B00B00726 /* LocationManager.m */,
 			);
 			path = BusTicker;
 			sourceTree = "<group>";
@@ -258,7 +263,7 @@
 				ORGANIZATIONNAME = HardwareHackMKE;
 				TargetAttributes = {
 					D438C876190C173C0021836B = {
-						DevelopmentTeam = 696JWCZD9Y;
+						DevelopmentTeam = M3FCT79SM9;
 					};
 					D438C897190C173C0021836B = {
 						TestTargetID = D438C876190C173C0021836B;
@@ -314,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4B0BD77190C91D5003A4EBB /* BusMapViewController.m in Sources */,
+				26210329190CA84B00B00726 /* LocationManager.m in Sources */,
 				D438C891190C173C0021836B /* BusTickerViewController.m in Sources */,
 				D438C88B190C173C0021836B /* AppDelegate.m in Sources */,
 				D438C887190C173C0021836B /* main.m in Sources */,
@@ -443,7 +449,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BusTicker",
@@ -451,7 +458,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "07C4BCCB-EB2E-486C-A9F1-0AEEC702CDB0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -461,7 +470,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BusTicker",
@@ -469,7 +479,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "07C4BCCB-EB2E-486C-A9F1-0AEEC702CDB0";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
