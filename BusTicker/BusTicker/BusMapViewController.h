@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BusMapViewController.h
 //  BusTicker
 //
 //  Created by Jake Widmer on 4/26/14.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <PebbleKit/PebbleKit.h>
+#import <MapKit/MapKit.h>
 
-@interface BusTickerViewController : UIViewController <UITextFieldDelegate>
+@interface BusMapViewController : UIViewController <MKMapViewDelegate>
 
 @end

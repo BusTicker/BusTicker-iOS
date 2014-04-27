@@ -24,6 +24,13 @@
 @property (strong, nonatomic) IBOutlet UILabel *stopIDLabel;
 @property (strong, nonatomic) IBOutlet UILabel *distanceToStopLabel;
 
+//
+@property (strong, nonatomic) IBOutlet UITextField *routeField;
+@property (strong, nonatomic) IBOutlet UITextField *stopField;
+@property (strong, nonatomic) IBOutlet UITextField *firstField;
+@property (strong, nonatomic) IBOutlet UITextField *secondField;
+
+
 @end
 
 @implementation BusTickerViewController
@@ -52,20 +59,19 @@
     
     PBWatch *watch = [[PBPebbleCentral defaultCentral] lastConnectedWatch];
     
-    if(watch){
+    if(watch && [watch isConnected]){
         // watch was found
-        
         NSLog(@"Connected");
     #warning TODO - add real data
         // create a dictionary to be passed
         
-//        NSString *first = [NSString stringWithFormat:@"%@ min", ];
-//        NSString *second = [NSString stringWithFormat:@"%@ min", ];
+        NSString *first = [NSString stringWithFormat:@"%@ min", self.firstField.text];
+        NSString *second = [NSString stringWithFormat:@"%@ min", self.secondField.text];
         NSDictionary *busTickerInfo = @{
-                                   @(SYNC_KEY_ROUTE) : @"GRE-S",
-                                   @(SYNC_KEY_STOP) : @"Oakland-Locust",
-                                   @(SYNC_KEY_FIRST_TIME) : @"10 min",
-                                   @(SYNC_KEY_SECOND_TIME) : @"22 min"
+                                   @(SYNC_KEY_ROUTE) : self.routeField.text,
+                                   @(SYNC_KEY_STOP) : self.stopField.text,
+                                   @(SYNC_KEY_FIRST_TIME) : first,
+                                   @(SYNC_KEY_SECOND_TIME) : second
                                    };
         
         [watch appMessagesPushUpdate:busTickerInfo onSent:^(PBWatch *watch, NSDictionary *update, NSError *error) {
@@ -84,11 +90,13 @@
 
 #pragma mark - Action handlers
 - (IBAction)favoritesButtonPressed:(id)sender {
-    
+    [self syncTickerWithPebble];
 }
 
-- (IBAction)mapButtonPressed:(id)sender {
-    [self syncTickerWithPebble];
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 

@@ -29,6 +29,8 @@
 		D485CC65190C547C006D0735 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC64190C547C006D0735 /* CoreMotion.framework */; };
 		D485CC67190C5483006D0735 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC66190C5483006D0735 /* CFNetwork.framework */; };
 		D485CC69190C548B006D0735 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC68190C548B006D0735 /* MessageUI.framework */; };
+		D4B0BD77190C91D5003A4EBB /* BusMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */; };
+		D4B0BD79190C9394003A4EBB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B0BD78190C9394003A4EBB /* MapKit.framework */; };
 		D4FD6DA7190C3E1A00C577EE /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA5190C3E1A00C577EE /* favorite.png */; };
 		D4FD6DA8190C3E1A00C577EE /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA6190C3E1A00C577EE /* map.png */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,9 @@
 		D485CC64190C547C006D0735 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D485CC66190C5483006D0735 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D485CC68190C548B006D0735 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D4B0BD75190C91D5003A4EBB /* BusMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusMapViewController.h; sourceTree = "<group>"; };
+		D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusMapViewController.m; sourceTree = "<group>"; };
+		D4B0BD78190C9394003A4EBB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D4FD6DA5190C3E1A00C577EE /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		D4FD6DA6190C3E1A00C577EE /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B0BD79190C9394003A4EBB /* MapKit.framework in Frameworks */,
 				D485CC69190C548B006D0735 /* MessageUI.framework in Frameworks */,
 				D485CC67190C5483006D0735 /* CFNetwork.framework in Frameworks */,
 				D485CC65190C547C006D0735 /* CoreMotion.framework in Frameworks */,
@@ -129,6 +135,7 @@
 		D438C879190C173C0021836B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4B0BD78190C9394003A4EBB /* MapKit.framework */,
 				D485CC68190C548B006D0735 /* MessageUI.framework */,
 				D485CC66190C5483006D0735 /* CFNetwork.framework */,
 				D485CC64190C547C006D0735 /* CoreMotion.framework */,
@@ -156,6 +163,8 @@
 				D438C890190C173C0021836B /* BusTickerViewController.m */,
 				D438C892190C173C0021836B /* Images.xcassets */,
 				D438C881190C173C0021836B /* Supporting Files */,
+				D4B0BD75190C91D5003A4EBB /* BusMapViewController.h */,
+				D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */,
 			);
 			path = BusTicker;
 			sourceTree = "<group>";
@@ -300,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B0BD77190C91D5003A4EBB /* BusMapViewController.m in Sources */,
 				D438C891190C173C0021836B /* BusTickerViewController.m in Sources */,
 				D438C88B190C173C0021836B /* AppDelegate.m in Sources */,
 				D438C887190C173C0021836B /* main.m in Sources */,
