@@ -209,6 +209,15 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="EEJ-Q4-7Cv"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIm-kF-12g">
+                                <rect key="frame" x="260" y="460" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="current_loc_compass.png"/>
+                                <connections>
+                                    <action selector="currentLocationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G85-8l-xeM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.41568627450000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -274,6 +283,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="current_loc_compass.png" width="512" height="512"/>
         <image name="favorite.png" width="512" height="512"/>
         <image name="map.png" width="512" height="512"/>
     </resources>

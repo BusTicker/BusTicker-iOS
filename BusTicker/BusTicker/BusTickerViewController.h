@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <PebbleKit/PebbleKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface BusTickerViewController : UIViewController <UITextFieldDelegate>
 
