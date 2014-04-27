@@ -93,6 +93,9 @@
     [self syncTickerWithPebble];
 }
 
+- (IBAction)currentLocationPressed:(id)sender {
+    
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
