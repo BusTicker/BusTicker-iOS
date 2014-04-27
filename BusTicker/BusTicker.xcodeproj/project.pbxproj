@@ -161,12 +161,12 @@
 				D438C889190C173C0021836B /* AppDelegate.h */,
 				D438C88A190C173C0021836B /* AppDelegate.m */,
 				D438C88C190C173C0021836B /* Main.storyboard */,
+				D438C892190C173C0021836B /* Images.xcassets */,
 				D438C88F190C173C0021836B /* BusTickerViewController.h */,
 				D438C890190C173C0021836B /* BusTickerViewController.m */,
-				D438C892190C173C0021836B /* Images.xcassets */,
-				D438C881190C173C0021836B /* Supporting Files */,
 				D4B0BD75190C91D5003A4EBB /* BusMapViewController.h */,
 				D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */,
+				D438C881190C173C0021836B /* Supporting Files */,
 			);
 			path = BusTicker;
 			sourceTree = "<group>";

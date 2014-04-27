@@ -11,7 +11,6 @@
 @interface BusMapViewController ()
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) CLLocation* initialLocation;
 
 @end
 

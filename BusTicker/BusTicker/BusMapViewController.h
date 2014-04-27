@@ -11,4 +11,6 @@
 
 @interface BusMapViewController : UIViewController <MKMapViewDelegate>
 
+@property (nonatomic, weak) CLLocation* initialLocation;
+
 @end

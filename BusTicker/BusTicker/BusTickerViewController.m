@@ -7,6 +7,7 @@
 //
 
 #import "BusTickerViewController.h"
+#import "BusMapViewController.h"
 #import "AppDelegate.h"
 
 #define SYNC_KEY_ROUTE 0
@@ -29,7 +30,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *stopField;
 @property (strong, nonatomic) IBOutlet UITextField *firstField;
 @property (strong, nonatomic) IBOutlet UITextField *secondField;
-
 
 @end
 
@@ -94,7 +94,7 @@
 }
 
 - (IBAction)currentLocationPressed:(id)sender {
-    
+
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -102,5 +102,12 @@
     return YES;
 }
 
+ #pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     if ([segue.identifier isEqualToString:@"BusMapSegue"]) {
+         BusMapViewController *dest = [segue destinationViewController];
+         dest.initialLocation = self.currentLocation;
+     }
+}
 
 @end
