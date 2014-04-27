@@ -33,6 +33,10 @@
         CLLocationManager *locationManager = [[CLLocationManager alloc] init];
         self.locationManager = locationManager;
         [self.locationManager setDesiredAccuracy: kCLLocationAccuracyHundredMeters];
+        
+        CLLocationCoordinate2D coordinate = kCLLocationCoordinate2DInvalid;
+        CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+        self.currentLocation = location;
     }
     return self;
 }

@@ -22,8 +22,7 @@
 		D438C89C190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
 		D438C8A4190C173C0021836B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D438C8A2190C173C0021836B /* InfoPlist.strings */; };
 		D438C8A6190C173C0021836B /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C8A5190C173C0021836B /* BusTickerTests.m */; };
-		D485CC5C190C53EE006D0735 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC5A190C53EE006D0735 /* PebbleKit.framework */; };
-		D485CC5D190C53EE006D0735 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC5B190C53EE006D0735 /* PebbleVendor.framework */; };
+		D45DE98862A948A8A52E8596 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D78C1C8C08C94521AE568AD6 /* libPods.a */; };
 		D485CC5F190C5462006D0735 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC5E190C5462006D0735 /* libz.dylib */; };
 		D485CC61190C546C006D0735 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC60190C546C006D0735 /* ExternalAccessory.framework */; };
 		D485CC63190C5475006D0735 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC62190C5475006D0735 /* CoreBluetooth.framework */; };
@@ -48,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		26210327190CA84B00B00726 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		26210328190CA84B00B00726 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		D438C877190C173C0021836B /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,8 +69,6 @@
 		D438C8A1190C173C0021836B /* BusTickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusTickerTests-Info.plist"; sourceTree = "<group>"; };
 		D438C8A3190C173C0021836B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D438C8A5190C173C0021836B /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
-		D485CC5A190C53EE006D0735 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = BusTicker/PebbleKit.framework; sourceTree = "<group>"; };
-		D485CC5B190C53EE006D0735 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = BusTicker/PebbleVendor.framework; sourceTree = "<group>"; };
 		D485CC5E190C5462006D0735 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D485CC60190C546C006D0735 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		D485CC62190C5475006D0735 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -83,6 +81,7 @@
 		D4B0BD7A190C98F8003A4EBB /* current_loc_compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = current_loc_compass.png; sourceTree = "<group>"; };
 		D4FD6DA5190C3E1A00C577EE /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		D4FD6DA6190C3E1A00C577EE /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		D78C1C8C08C94521AE568AD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +97,9 @@
 				D485CC61190C546C006D0735 /* ExternalAccessory.framework in Frameworks */,
 				D485CC5F190C5462006D0735 /* libz.dylib in Frameworks */,
 				D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */,
-				D485CC5D190C53EE006D0735 /* PebbleVendor.framework in Frameworks */,
-				D485CC5C190C53EE006D0735 /* PebbleKit.framework in Frameworks */,
 				D438C87F190C173C0021836B /* UIKit.framework in Frameworks */,
 				D438C87B190C173C0021836B /* Foundation.framework in Frameworks */,
+				D45DE98862A948A8A52E8596 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +123,7 @@
 				D438C89F190C173C0021836B /* BusTickerTests */,
 				D438C879190C173C0021836B /* Frameworks */,
 				D438C878190C173C0021836B /* Products */,
+				1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,12 +146,11 @@
 				D485CC62190C5475006D0735 /* CoreBluetooth.framework */,
 				D485CC60190C546C006D0735 /* ExternalAccessory.framework */,
 				D485CC5E190C5462006D0735 /* libz.dylib */,
-				D485CC5A190C53EE006D0735 /* PebbleKit.framework */,
-				D485CC5B190C53EE006D0735 /* PebbleVendor.framework */,
 				D438C87A190C173C0021836B /* Foundation.framework */,
 				D438C87C190C173C0021836B /* CoreGraphics.framework */,
 				D438C87E190C173C0021836B /* UIKit.framework */,
 				D438C899190C173C0021836B /* XCTest.framework */,
+				D78C1C8C08C94521AE568AD6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D438C8A9190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTicker" */;
 			buildPhases = (
+				087AC05D01DA4A789228E84E /* Check Pods Manifest.lock */,
 				D438C873190C173C0021836B /* Sources */,
 				D438C874190C173C0021836B /* Frameworks */,
 				D438C875190C173C0021836B /* Resources */,
+				DE6CEAEA89BE419BBE1FC920 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,6 +312,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		087AC05D01DA4A789228E84E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6CEAEA89BE419BBE1FC920 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D438C873190C173C0021836B /* Sources */ = {
@@ -446,6 +479,7 @@
 		};
 		D438C8AA190C173C0021836B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -467,6 +501,7 @@
 		};
 		D438C8AB190C173C0021836B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

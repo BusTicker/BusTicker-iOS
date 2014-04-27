@@ -8,13 +8,15 @@
 
 #import "BusTickerViewController.h"
 #import "BusMapViewController.h"
-#import "LocationManager.h"
 #import "AppDelegate.h"
 
 #define SYNC_KEY_ROUTE 0
 #define SYNC_KEY_STOP 1
 #define SYNC_KEY_FIRST_TIME 2
 #define SYNC_KEY_SECOND_TIME 3
+
+#pragma mark - Class Extension
+#pragma mark -
 
 @interface BusTickerViewController ()
 
@@ -25,31 +27,55 @@
 @property (strong, nonatomic) IBOutlet UILabel *stopIDLabel;
 @property (strong, nonatomic) IBOutlet UILabel *distanceToStopLabel;
 
-//
 @property (strong, nonatomic) IBOutlet UITextField *routeField;
 @property (strong, nonatomic) IBOutlet UITextField *stopField;
 @property (strong, nonatomic) IBOutlet UITextField *firstField;
 @property (strong, nonatomic) IBOutlet UITextField *secondField;
 
+@property (strong, nonatomic, readonly) CLLocation *currentLocation;
+
 @end
 
+#pragma mark -
+
 @implementation BusTickerViewController
+
+#pragma mark - Properties
+#pragma mark -
+
+- (CLLocation *)currentLocation {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.currentLocation;
+}
+
+#pragma mark - View Lifecycle
+#pragma mark -
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self setNeedsStatusBarAppearanceUpdate];
     
-    LocationManager *locationManager = [[LocationManager alloc] init];
-    [locationManager updateLocationWithCompletionBlock:^(CLLocation *location, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@", error);
-        }
-        else {
-            NSLog(@"Location: %0.7f, %0.7f", location.coordinate.latitude, location.coordinate.longitude);
-        }
-    }];
+    
+}
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appDelegateDidUpdateLocationNotification:)
+                                                 name:AppDelegateDidUpdateLocationNotification
+                                               object:nil];
+    
+    [self requestLocationUpdate];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:AppDelegateDidUpdateLocationNotification
+                                                  object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,9 +87,17 @@
     return UIStatusBarStyleLightContent;
 }
 
-#pragma mark - Pebble watch methods
+#pragma mark - Private
+#pragma mark -
 
-- (void) syncTickerWithPebble{
+- (void)requestLocationUpdate {
+    [[NSNotificationCenter defaultCenter] postNotificationName:AppDelegateRequestLocationUpdateNotification object:nil];
+}
+
+#pragma mark - Pebble watch methods
+#pragma mark -
+
+- (void)syncTickerWithPebble {
     
     PBWatch *watch = [[PBPebbleCentral defaultCentral] lastConnectedWatch];
     
@@ -97,12 +131,14 @@
 }
 
 #pragma mark - Action handlers
+#pragma mark -
+
 - (IBAction)favoritesButtonPressed:(id)sender {
     [self syncTickerWithPebble];
 }
 
 - (IBAction)currentLocationPressed:(id)sender {
-
+    [self requestLocationUpdate];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -110,12 +146,24 @@
     return YES;
 }
 
- #pragma mark - Navigation
+#pragma mark - Navigation
+#pragma mark -
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-     if ([segue.identifier isEqualToString:@"BusMapSegue"]) {
-         BusMapViewController *dest = [segue destinationViewController];
-         dest.initialLocation = self.currentLocation;
-     }
+//     if ([segue.identifier isEqualToString:@"BusMapSegue"]) {
+//         BusMapViewController *dest = [segue destinationViewController];
+//     }
+}
+
+#pragma mark - Notification
+#pragma mark -
+
+- (void)appDelegateDidUpdateLocationNotification:(NSNotification *)notification {
+    // TODO: use the new current location
+    
+    if (self.currentLocation && CLLocationCoordinate2DIsValid(self.currentLocation.coordinate)) {
+        NSLog(@"Current Location: %f, %f", self.currentLocation.coordinate.latitude, self.currentLocation.coordinate.longitude);
+    }
 }
 
 @end
