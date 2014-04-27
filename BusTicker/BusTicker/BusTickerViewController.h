@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <PebbleKit/PebbleKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface BusTickerViewController : UIViewController <UITextFieldDelegate>
+@interface BusTickerViewController : UIViewController <UITextFieldDelegate, CLLocationManagerDelegate>
+
+@property (strong, nonatomic) CLLocation *currentLocation;
 
 @end
