@@ -9,11 +9,25 @@
 #import "AppDelegate.h"
 
 #import "LocationManager.h"
+#import "ServiceManager.h"
+#import "Route.h"
 
 NSString * const AppDelegateDidUpdateLocationNotification = @"AppDelegateDidUpdateLocationNotification";
 NSString * const AppDelegateRequestLocationUpdateNotification = @"AppDelegateRequestLocationUpdateNotification";
+NSString * const AppDelegateDidLoadBusStopsNotification = @"AppDelegateDidLoadBusStopsNotification";
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    NSArray *fetchedRoutes;
+    NSMutableArray *fetchedBusStops;
+    ServiceManager *sm;
+}
+
+#pragma mark - Properties
+#pragma mark -
+
+- (NSArray *)allStops {
+    return fetchedBusStops;
+}
 
 #pragma mark - UIApplicationDelegate
 #pragma mark -
@@ -37,6 +51,8 @@ NSString * const AppDelegateRequestLocationUpdateNotification = @"AppDelegateReq
                                              selector:@selector(appDelegateRequestLocationUpdateNotification:)
                                                  name:AppDelegateRequestLocationUpdateNotification
                                                object:nil];
+    
+    [self fetchRoutes];
     
     return YES;
 }
@@ -95,6 +111,40 @@ NSString * const AppDelegateRequestLocationUpdateNotification = @"AppDelegateReq
             [[NSNotificationCenter defaultCenter] postNotificationName:AppDelegateDidUpdateLocationNotification object:nil];
         }
     }];
+}
+
+- (void)fetchRoutes {
+    sm = [[ServiceManager alloc] init];
+    fetchedBusStops = [@[] mutableCopy];
+    [sm fetchRoutesWithCompletionBlock:^(NSArray *routes, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+        else {
+            fetchedRoutes = routes;
+            [self fetchBusStopsForRouteAtIndex:0];
+        }
+    }];
+}
+
+- (void)fetchBusStopsForRouteAtIndex:(NSInteger)index {
+    if (index < fetchedRoutes.count) {
+        Route *route = fetchedRoutes[index];
+        
+        [sm fetchStopsForRoute:route withCompletionBlock:^(NSArray *stops, NSError *error) {
+            if (error) {
+                NSLog(@"Error: %@", error);
+            }
+            else {
+                [fetchedBusStops addObjectsFromArray:stops];
+                [self fetchBusStopsForRouteAtIndex:index+1];
+            }
+        }];
+    }
+    else {
+        NSLog(@"Stops: %lu", (long)fetchedBusStops.count);
+        [[NSNotificationCenter defaultCenter] postNotificationName:AppDelegateDidLoadBusStopsNotification object:nil];
+    }
 }
 
 #pragma mark - Notifications

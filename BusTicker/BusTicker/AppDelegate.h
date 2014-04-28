@@ -12,10 +12,12 @@
 
 extern NSString * const AppDelegateDidUpdateLocationNotification;
 extern NSString * const AppDelegateRequestLocationUpdateNotification;
+extern NSString * const AppDelegateDidLoadBusStopsNotification;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, PBPebbleCentralDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) CLLocation *currentLocation;
+@property (readonly, nonatomic) NSArray *allStops;
 
 @end
