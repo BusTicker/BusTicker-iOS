@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		26210329190CA84B00B00726 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26210328190CA84B00B00726 /* LocationManager.m */; };
+		267B5669190D75D100EADA44 /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B5668190D75D100EADA44 /* ServiceManager.m */; };
+		267B566D190D904100EADA44 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B566C190D904100EADA44 /* Route.m */; };
+		267B5670190DA69F00EADA44 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B566F190DA69F00EADA44 /* BusStop.m */; };
 		D438C87B190C173C0021836B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87A190C173C0021836B /* Foundation.framework */; };
 		D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87C190C173C0021836B /* CoreGraphics.framework */; };
 		D438C87F190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
@@ -50,6 +53,12 @@
 		1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		26210327190CA84B00B00726 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		26210328190CA84B00B00726 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		267B5667190D75D100EADA44 /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
+		267B5668190D75D100EADA44 /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceManager.m; sourceTree = "<group>"; };
+		267B566B190D904100EADA44 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		267B566C190D904100EADA44 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		267B566E190DA69F00EADA44 /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStop.h; sourceTree = "<group>"; };
+		267B566F190DA69F00EADA44 /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStop.m; sourceTree = "<group>"; };
 		D438C877190C173C0021836B /* BusTickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D438C87A190C173C0021836B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D438C87C190C173C0021836B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,6 +125,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		267B566A190D903300EADA44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				267B566B190D904100EADA44 /* Route.h */,
+				267B566C190D904100EADA44 /* Route.m */,
+				267B566E190DA69F00EADA44 /* BusStop.h */,
+				267B566F190DA69F00EADA44 /* BusStop.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		D438C86E190C173C0021836B = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +178,7 @@
 		D438C880190C173C0021836B /* BusTicker */ = {
 			isa = PBXGroup;
 			children = (
+				267B566A190D903300EADA44 /* Models */,
 				D438C881190C173C0021836B /* Supporting Files */,
 				D4FD6DA4190C3E1A00C577EE /* resources */,
 				D438C889190C173C0021836B /* AppDelegate.h */,
@@ -170,6 +191,8 @@
 				D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */,
 				26210327190CA84B00B00726 /* LocationManager.h */,
 				26210328190CA84B00B00726 /* LocationManager.m */,
+				267B5667190D75D100EADA44 /* ServiceManager.h */,
+				267B5668190D75D100EADA44 /* ServiceManager.m */,
 			);
 			path = BusTicker;
 			sourceTree = "<group>";
@@ -354,8 +377,11 @@
 				D4B0BD77190C91D5003A4EBB /* BusMapViewController.m in Sources */,
 				26210329190CA84B00B00726 /* LocationManager.m in Sources */,
 				D438C891190C173C0021836B /* BusTickerViewController.m in Sources */,
+				267B5669190D75D100EADA44 /* ServiceManager.m in Sources */,
+				267B5670190DA69F00EADA44 /* BusStop.m in Sources */,
 				D438C88B190C173C0021836B /* AppDelegate.m in Sources */,
 				D438C887190C173C0021836B /* main.m in Sources */,
+				267B566D190D904100EADA44 /* Route.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +520,7 @@
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = BusTickr;
-				PROVISIONING_PROFILE = "6D9CD7E3-96C7-44BB-9502-86CF540F27E0";
+				PROVISIONING_PROFILE = "ACAF2F08-A534-455C-8D0F-ED2F434F5BAA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -516,7 +542,7 @@
 				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = BusTickr;
-				PROVISIONING_PROFILE = "6D9CD7E3-96C7-44BB-9502-86CF540F27E0";
+				PROVISIONING_PROFILE = "ACAF2F08-A534-455C-8D0F-ED2F434F5BAA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

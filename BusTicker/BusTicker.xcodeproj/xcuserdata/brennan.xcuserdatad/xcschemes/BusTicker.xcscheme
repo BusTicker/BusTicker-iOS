@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D438C876190C173C0021836B"
-               BuildableName = "BusTicker.app"
+               BuildableName = "BusTickr.app"
                BlueprintName = "BusTicker"
                ReferencedContainer = "container:BusTicker.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D438C876190C173C0021836B"
-            BuildableName = "BusTicker.app"
+            BuildableName = "BusTickr.app"
             BlueprintName = "BusTicker"
             ReferencedContainer = "container:BusTicker.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D438C876190C173C0021836B"
-            BuildableName = "BusTicker.app"
+            BuildableName = "BusTickr.app"
             BlueprintName = "BusTicker"
             ReferencedContainer = "container:BusTicker.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D438C876190C173C0021836B"
-            BuildableName = "BusTicker.app"
+            BuildableName = "BusTickr.app"
             BlueprintName = "BusTicker"
             ReferencedContainer = "container:BusTicker.xcodeproj">
          </BuildableReference>

@@ -67,6 +67,11 @@
                                                  name:AppDelegateDidUpdateLocationNotification
                                                object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(appDelegateDidLoadBusStopsNotification:)
+                                                 name:AppDelegateDidLoadBusStopsNotification
+                                               object:nil];
+    
     [self requestLocationUpdate];
 }
 
@@ -164,6 +169,9 @@
     if (self.currentLocation && CLLocationCoordinate2DIsValid(self.currentLocation.coordinate)) {
         NSLog(@"Current Location: %f, %f", self.currentLocation.coordinate.latitude, self.currentLocation.coordinate.longitude);
     }
+}
+
+- (void)appDelegateDidLoadBusStopsNotification:(NSNotification *)notification {
 }
 
 @end

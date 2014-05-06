@@ -9,8 +9,8 @@
 #import "LocationManager.h"
 
 #define kLocationUpdateTimeout      5.0
-#define kSimulatorLatitude          43.040038
-#define kSimulatorLongitude         -87.904701
+#define kSimulatorLatitude          43.060179
+#define kSimulatorLongitude         -87.885228
 
 #pragma mark - Class Extension
 #pragma mark -
@@ -42,10 +42,19 @@
 }
 
 - (void)updateLocationWithCompletionBlock:(UpdatedLocationBlock)updatedLocationBlock {
-    if ([CLLocationManager locationServicesEnabled]) {
-        self.updatedLocationBlock = [updatedLocationBlock copy];
-        [self updateCurrentLocation];
+    // TODO: Fake out the location
+    
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:kSimulatorLatitude longitude:kSimulatorLongitude];
+    self.currentLocation = location;
+
+    if (updatedLocationBlock) {
+        updatedLocationBlock(location, nil);
     }
+    
+//    if ([CLLocationManager locationServicesEnabled]) {
+//        self.updatedLocationBlock = [updatedLocationBlock copy];
+//        [self updateCurrentLocation];
+//    }
 }
 
 #pragma mark - Location Monitoring
