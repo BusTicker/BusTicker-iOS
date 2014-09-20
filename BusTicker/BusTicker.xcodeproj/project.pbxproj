@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
+		26302DC619CE2B600033E826 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC519CE2B600033E826 /* StyleKit.m */; };
+		26302DC719CE2B600033E826 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC519CE2B600033E826 /* StyleKit.m */; };
+		26302DCA19CE2BB70033E826 /* StyleKit+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC919CE2BB70033E826 /* StyleKit+Additions.m */; };
+		26302DCB19CE2BB70033E826 /* StyleKit+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC919CE2BB70033E826 /* StyleKit+Additions.m */; };
+		26302DCE19CE36750033E826 /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DCD19CE36750033E826 /* AppHelper.m */; };
+		26302DCF19CE36750033E826 /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DCD19CE36750033E826 /* AppHelper.m */; };
+		2645C3AD19CE377C003B2BD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645C3A919CE377C003B2BD8 /* Foundation.framework */; };
+		2645C3AE19CE377C003B2BD8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645C3AA19CE377C003B2BD8 /* MapKit.framework */; };
+		2645C3AF19CE377C003B2BD8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645C3AB19CE377C003B2BD8 /* SystemConfiguration.framework */; };
+		2645C3B019CE377C003B2BD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645C3AC19CE377C003B2BD8 /* UIKit.framework */; };
+		2669198C19CE098600404F9A /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198B19CE098600404F9A /* HomeCollectionViewController.m */; };
+		2669198D19CE098600404F9A /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198B19CE098600404F9A /* HomeCollectionViewController.m */; };
+		2669199019CE09B300404F9A /* BusStopPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198F19CE09B300404F9A /* BusStopPickerViewController.m */; };
+		2669199119CE09B300404F9A /* BusStopPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198F19CE09B300404F9A /* BusStopPickerViewController.m */; };
+		2669199419CE09C900404F9A /* QuickSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669199319CE09C900404F9A /* QuickSelectViewController.m */; };
+		2669199519CE09C900404F9A /* QuickSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669199319CE09C900404F9A /* QuickSelectViewController.m */; };
 		26BD76FE19CDE87400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
 		26BD770119CDE87400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
-		26BD770419CDE87400B00969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770319CDE87400B00969 /* ViewController.m */; };
 		26BD770719CDE87400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
 		26BD770919CDE87400B00969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770819CDE87400B00969 /* Images.xcassets */; };
 		26BD770C19CDE87400B00969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770A19CDE87400B00969 /* LaunchScreen.xib */; };
 		26BD771819CDE87400B00969 /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD771719CDE87400B00969 /* BusTickerTests.m */; };
-		26BD772419CDEA8400B00969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770319CDE87400B00969 /* ViewController.m */; };
 		26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
 		26BD772619CDEA8400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
-		26BD772819CDEA8400B00969 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D538C17A24F79A725CE1D /* libPods.a */; };
 		26BD772A19CDEA8400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
 		26BD772B19CDEA8400B00969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770A19CDE87400B00969 /* LaunchScreen.xib */; };
 		26BD772C19CDEA8400B00969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770819CDE87400B00969 /* Images.xcassets */; };
@@ -36,14 +49,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26302DC419CE2B600033E826 /* StyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleKit.h; sourceTree = "<group>"; };
+		26302DC519CE2B600033E826 /* StyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleKit.m; sourceTree = "<group>"; };
+		26302DC819CE2BB70033E826 /* StyleKit+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StyleKit+Additions.h"; sourceTree = "<group>"; };
+		26302DC919CE2BB70033E826 /* StyleKit+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StyleKit+Additions.m"; sourceTree = "<group>"; };
+		26302DCC19CE36750033E826 /* AppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHelper.h; sourceTree = "<group>"; };
+		26302DCD19CE36750033E826 /* AppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHelper.m; sourceTree = "<group>"; };
+		2645C3A919CE377C003B2BD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2645C3AA19CE377C003B2BD8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2645C3AB19CE377C003B2BD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2645C3AC19CE377C003B2BD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		265D538C17A24F79A725CE1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2669198A19CE098600404F9A /* HomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
+		2669198B19CE098600404F9A /* HomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
+		2669198E19CE09B300404F9A /* BusStopPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopPickerViewController.h; sourceTree = "<group>"; };
+		2669198F19CE09B300404F9A /* BusStopPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopPickerViewController.m; sourceTree = "<group>"; };
+		2669199219CE09C900404F9A /* QuickSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSelectViewController.h; sourceTree = "<group>"; };
+		2669199319CE09C900404F9A /* QuickSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSelectViewController.m; sourceTree = "<group>"; };
 		26BD76F819CDE87400B00969 /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BD76FC19CDE87400B00969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BD76FD19CDE87400B00969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26BD76FF19CDE87400B00969 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26BD770019CDE87400B00969 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		26BD770219CDE87400B00969 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26BD770319CDE87400B00969 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		26BD770619CDE87400B00969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26BD770819CDE87400B00969 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26BD770B19CDE87400B00969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -77,7 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BD772819CDEA8400B00969 /* libPods.a in Frameworks */,
+				2645C3AD19CE377C003B2BD8 /* Foundation.framework in Frameworks */,
+				2645C3AE19CE377C003B2BD8 /* MapKit.framework in Frameworks */,
+				2645C3AF19CE377C003B2BD8 /* SystemConfiguration.framework in Frameworks */,
+				2645C3B019CE377C003B2BD8 /* UIKit.framework in Frameworks */,
 				1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +115,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26302DC319CE2B530033E826 /* StyleKit */ = {
+			isa = PBXGroup;
+			children = (
+				26302DC419CE2B600033E826 /* StyleKit.h */,
+				26302DC519CE2B600033E826 /* StyleKit.m */,
+				26302DC819CE2BB70033E826 /* StyleKit+Additions.h */,
+				26302DC919CE2BB70033E826 /* StyleKit+Additions.m */,
+			);
+			name = StyleKit;
+			sourceTree = "<group>";
+		};
+		2669198919CE095D00404F9A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2669198A19CE098600404F9A /* HomeCollectionViewController.h */,
+				2669198B19CE098600404F9A /* HomeCollectionViewController.m */,
+				2669198E19CE09B300404F9A /* BusStopPickerViewController.h */,
+				2669198F19CE09B300404F9A /* BusStopPickerViewController.m */,
+				2669199219CE09C900404F9A /* QuickSelectViewController.h */,
+				2669199319CE09C900404F9A /* QuickSelectViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		26BD76EF19CDE87400B00969 = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +164,12 @@
 		26BD76FA19CDE87400B00969 /* BusTicker */ = {
 			isa = PBXGroup;
 			children = (
+				26302DC319CE2B530033E826 /* StyleKit */,
+				2669198919CE095D00404F9A /* View Controllers */,
 				26BD76FF19CDE87400B00969 /* AppDelegate.h */,
 				26BD770019CDE87400B00969 /* AppDelegate.m */,
-				26BD770219CDE87400B00969 /* ViewController.h */,
-				26BD770319CDE87400B00969 /* ViewController.m */,
+				26302DCC19CE36750033E826 /* AppHelper.h */,
+				26302DCD19CE36750033E826 /* AppHelper.m */,
 				26BD770519CDE87400B00969 /* Main.storyboard */,
 				26BD770819CDE87400B00969 /* Images.xcassets */,
 				26BD770A19CDE87400B00969 /* LaunchScreen.xib */,
@@ -152,6 +208,10 @@
 		8495112D26EA40EFB60CC06F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2645C3A919CE377C003B2BD8 /* Foundation.framework */,
+				2645C3AA19CE377C003B2BD8 /* MapKit.framework */,
+				2645C3AB19CE377C003B2BD8 /* SystemConfiguration.framework */,
+				2645C3AC19CE377C003B2BD8 /* UIKit.framework */,
 				265D538C17A24F79A725CE1D /* libPods.a */,
 				F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */,
 			);
@@ -170,6 +230,7 @@
 				26BD76F519CDE87400B00969 /* Frameworks */,
 				26BD76F619CDE87400B00969 /* Resources */,
 				BD359476D49F4F04BB1AA34A /* Copy Pods Resources */,
+				2669198719CDF30700404F9A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,6 +268,7 @@
 				26BD772719CDEA8400B00969 /* Frameworks */,
 				26BD772919CDEA8400B00969 /* Resources */,
 				26BD772D19CDEA8400B00969 /* Copy Pods Resources */,
+				2669198819CDF31800404F9A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -286,6 +348,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2669198719CDF30700404F9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M%S\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
+		};
+		2669198819CDF31800404F9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M%S\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
+		};
 		26BD772219CDEA8400B00969 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,9 +441,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BD770419CDE87400B00969 /* ViewController.m in Sources */,
+				26302DCA19CE2BB70033E826 /* StyleKit+Additions.m in Sources */,
 				26BD770119CDE87400B00969 /* AppDelegate.m in Sources */,
+				2669199419CE09C900404F9A /* QuickSelectViewController.m in Sources */,
+				2669199019CE09B300404F9A /* BusStopPickerViewController.m in Sources */,
 				26BD76FE19CDE87400B00969 /* main.m in Sources */,
+				26302DC619CE2B600033E826 /* StyleKit.m in Sources */,
+				2669198C19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
+				26302DCE19CE36750033E826 /* AppHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +464,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BD772419CDEA8400B00969 /* ViewController.m in Sources */,
+				26302DCB19CE2BB70033E826 /* StyleKit+Additions.m in Sources */,
 				26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */,
+				2669199519CE09C900404F9A /* QuickSelectViewController.m in Sources */,
+				2669199119CE09B300404F9A /* BusStopPickerViewController.m in Sources */,
 				26BD772619CDEA8400B00969 /* main.m in Sources */,
+				26302DC719CE2B600033E826 /* StyleKit.m in Sources */,
+				2669198D19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
+				26302DCF19CE36750033E826 /* AppHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusTicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -500,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusTicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QuickSelectViewController.h
 //  BusTicker
 //
 //  Created by Brennan Stehling on 9/20/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface QuickSelectViewController : UIViewController
 
 @end
-

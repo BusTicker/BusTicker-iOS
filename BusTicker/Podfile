@@ -2,14 +2,15 @@ platform :ios, '7.0'
 
 pod 'AFNetworking', '~> 2.4'
 pod 'UIView-Autolayout', '~> 0.2.0'
-pod 'TTTAttributedLabel', '~> 1.10'
 pod 'BlocksKit', '~> 2.2.0'
 pod 'SVPulsingAnnotationView', '~> 0.3.0'
 pod 'PebbleKit', '~> 2.4'
-#pod 'Forecastr', '~> 0.1'
 pod 'Facebook-iOS-SDK', '~> 3.0'
 pod 'Parse-iOS-SDK', '~> 1.2.19'
 pod 'Foursquare-API-v2', '~> 1.4'
+pod 'TTTAttributedLabel', '~> 1.10'
+
+#pod 'Forecastr', '~> 0.1'
 
 pod 'JTSReachability', :git => 'http://github.com/brennanMKE/JTSReachability.git', :tag => '1.1.0'
 
