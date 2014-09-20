@@ -77,6 +77,7 @@
 }
 
 - (void)finishWithBestLocation:(CLLocation *)location error:(NSError *)error {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(stopUpdatingLocationAfterTimeout) object:nil];
     self.currentLocation = location;
 
     [self.locationManager stopUpdatingLocation];

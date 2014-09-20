@@ -24,7 +24,7 @@ DEPENDENCIES:
   - PebbleKit (~> 2.0.0)
 
 SPEC CHECKSUMS:
-  AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
-  PebbleKit: 53210eef54148192ae5a42a88c9d4aac3b2ead72
+  AFNetworking: a4d0e9a64de9242986620dafd1b3cee3b413ac5c
+  PebbleKit: d209eacf36dd420872954308763eef03c6dca8df
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1
