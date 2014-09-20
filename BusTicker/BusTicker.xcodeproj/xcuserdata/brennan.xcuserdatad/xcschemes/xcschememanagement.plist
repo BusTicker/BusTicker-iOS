@@ -9,15 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Staging.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D438C876190C173C0021836B</key>
+		<key>26BD76F719CDE87400B00969</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D438C897190C173C0021836B</key>
+		<key>26BD771019CDE87400B00969</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26BD772119CDEA8400B00969</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,247 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26210329190CA84B00B00726 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26210328190CA84B00B00726 /* LocationManager.m */; };
-		267B5669190D75D100EADA44 /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B5668190D75D100EADA44 /* ServiceManager.m */; };
-		267B566D190D904100EADA44 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B566C190D904100EADA44 /* Route.m */; };
-		267B5670190DA69F00EADA44 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B566F190DA69F00EADA44 /* BusStop.m */; };
-		D438C87B190C173C0021836B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87A190C173C0021836B /* Foundation.framework */; };
-		D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87C190C173C0021836B /* CoreGraphics.framework */; };
-		D438C87F190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
-		D438C885190C173C0021836B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D438C883190C173C0021836B /* InfoPlist.strings */; };
-		D438C887190C173C0021836B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C886190C173C0021836B /* main.m */; };
-		D438C88B190C173C0021836B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C88A190C173C0021836B /* AppDelegate.m */; };
-		D438C88E190C173C0021836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D438C88C190C173C0021836B /* Main.storyboard */; };
-		D438C891190C173C0021836B /* BusTickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C890190C173C0021836B /* BusTickerViewController.m */; };
-		D438C893190C173C0021836B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D438C892190C173C0021836B /* Images.xcassets */; };
-		D438C89A190C173C0021836B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C899190C173C0021836B /* XCTest.framework */; };
-		D438C89B190C173C0021836B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87A190C173C0021836B /* Foundation.framework */; };
-		D438C89C190C173C0021836B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D438C87E190C173C0021836B /* UIKit.framework */; };
-		D438C8A4190C173C0021836B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D438C8A2190C173C0021836B /* InfoPlist.strings */; };
-		D438C8A6190C173C0021836B /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D438C8A5190C173C0021836B /* BusTickerTests.m */; };
-		D45DE98862A948A8A52E8596 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D78C1C8C08C94521AE568AD6 /* libPods.a */; };
-		D485CC5F190C5462006D0735 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC5E190C5462006D0735 /* libz.dylib */; };
-		D485CC61190C546C006D0735 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC60190C546C006D0735 /* ExternalAccessory.framework */; };
-		D485CC63190C5475006D0735 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC62190C5475006D0735 /* CoreBluetooth.framework */; };
-		D485CC65190C547C006D0735 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC64190C547C006D0735 /* CoreMotion.framework */; };
-		D485CC67190C5483006D0735 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC66190C5483006D0735 /* CFNetwork.framework */; };
-		D485CC69190C548B006D0735 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D485CC68190C548B006D0735 /* MessageUI.framework */; };
-		D4B0BD77190C91D5003A4EBB /* BusMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */; };
-		D4B0BD79190C9394003A4EBB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B0BD78190C9394003A4EBB /* MapKit.framework */; };
-		D4B0BD7B190C98F8003A4EBB /* current_loc_compass.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B0BD7A190C98F8003A4EBB /* current_loc_compass.png */; };
-		D4FD6DA7190C3E1A00C577EE /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA5190C3E1A00C577EE /* favorite.png */; };
-		D4FD6DA8190C3E1A00C577EE /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = D4FD6DA6190C3E1A00C577EE /* map.png */; };
+		1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
+		26BD76FE19CDE87400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
+		26BD770119CDE87400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
+		26BD770419CDE87400B00969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770319CDE87400B00969 /* ViewController.m */; };
+		26BD770719CDE87400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
+		26BD770919CDE87400B00969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770819CDE87400B00969 /* Images.xcassets */; };
+		26BD770C19CDE87400B00969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770A19CDE87400B00969 /* LaunchScreen.xib */; };
+		26BD771819CDE87400B00969 /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD771719CDE87400B00969 /* BusTickerTests.m */; };
+		26BD772419CDEA8400B00969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770319CDE87400B00969 /* ViewController.m */; };
+		26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
+		26BD772619CDEA8400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
+		26BD772819CDEA8400B00969 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D538C17A24F79A725CE1D /* libPods.a */; };
+		26BD772A19CDEA8400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
+		26BD772B19CDEA8400B00969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770A19CDE87400B00969 /* LaunchScreen.xib */; };
+		26BD772C19CDEA8400B00969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770819CDE87400B00969 /* Images.xcassets */; };
+		99E0B89A210D40CC987C2F12 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D538C17A24F79A725CE1D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D438C89D190C173C0021836B /* PBXContainerItemProxy */ = {
+		26BD771219CDE87400B00969 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D438C86F190C173C0021836B /* Project object */;
+			containerPortal = 26BD76F019CDE87400B00969 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D438C876190C173C0021836B;
+			remoteGlobalIDString = 26BD76F719CDE87400B00969;
 			remoteInfo = BusTicker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		26210327190CA84B00B00726 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		26210328190CA84B00B00726 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
-		267B5667190D75D100EADA44 /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
-		267B5668190D75D100EADA44 /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceManager.m; sourceTree = "<group>"; };
-		267B566B190D904100EADA44 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
-		267B566C190D904100EADA44 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
-		267B566E190DA69F00EADA44 /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStop.h; sourceTree = "<group>"; };
-		267B566F190DA69F00EADA44 /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStop.m; sourceTree = "<group>"; };
-		D438C877190C173C0021836B /* BusTickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D438C87A190C173C0021836B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D438C87C190C173C0021836B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D438C87E190C173C0021836B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D438C882190C173C0021836B /* BusTicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusTicker-Info.plist"; sourceTree = "<group>"; };
-		D438C884190C173C0021836B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D438C886190C173C0021836B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D438C888190C173C0021836B /* BusTicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusTicker-Prefix.pch"; sourceTree = "<group>"; };
-		D438C889190C173C0021836B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D438C88A190C173C0021836B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D438C88D190C173C0021836B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D438C88F190C173C0021836B /* BusTickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusTickerViewController.h; sourceTree = "<group>"; };
-		D438C890190C173C0021836B /* BusTickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerViewController.m; sourceTree = "<group>"; };
-		D438C892190C173C0021836B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D438C898190C173C0021836B /* BusTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D438C899190C173C0021836B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D438C8A1190C173C0021836B /* BusTickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusTickerTests-Info.plist"; sourceTree = "<group>"; };
-		D438C8A3190C173C0021836B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D438C8A5190C173C0021836B /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
-		D485CC5E190C5462006D0735 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D485CC60190C546C006D0735 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		D485CC62190C5475006D0735 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		D485CC64190C547C006D0735 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		D485CC66190C5483006D0735 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		D485CC68190C548B006D0735 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		D4B0BD75190C91D5003A4EBB /* BusMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusMapViewController.h; sourceTree = "<group>"; };
-		D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusMapViewController.m; sourceTree = "<group>"; };
-		D4B0BD78190C9394003A4EBB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D4B0BD7A190C98F8003A4EBB /* current_loc_compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = current_loc_compass.png; sourceTree = "<group>"; };
-		D4FD6DA5190C3E1A00C577EE /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
-		D4FD6DA6190C3E1A00C577EE /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
-		D78C1C8C08C94521AE568AD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		265D538C17A24F79A725CE1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BD76F819CDE87400B00969 /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BD76FC19CDE87400B00969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BD76FD19CDE87400B00969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26BD76FF19CDE87400B00969 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		26BD770019CDE87400B00969 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		26BD770219CDE87400B00969 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		26BD770319CDE87400B00969 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		26BD770619CDE87400B00969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26BD770819CDE87400B00969 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		26BD770B19CDE87400B00969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		26BD771119CDE87400B00969 /* BusTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BD771619CDE87400B00969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BD771719CDE87400B00969 /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
+		26BD773119CDEA8400B00969 /* Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BD773319CDEC2F00B00969 /* Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Staging.plist; sourceTree = "<group>"; };
+		CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Staging.xcconfig"; path = "Pods/Pods-Staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D438C874190C173C0021836B /* Frameworks */ = {
+		26BD76F519CDE87400B00969 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B0BD79190C9394003A4EBB /* MapKit.framework in Frameworks */,
-				D485CC69190C548B006D0735 /* MessageUI.framework in Frameworks */,
-				D485CC67190C5483006D0735 /* CFNetwork.framework in Frameworks */,
-				D485CC65190C547C006D0735 /* CoreMotion.framework in Frameworks */,
-				D485CC63190C5475006D0735 /* CoreBluetooth.framework in Frameworks */,
-				D485CC61190C546C006D0735 /* ExternalAccessory.framework in Frameworks */,
-				D485CC5F190C5462006D0735 /* libz.dylib in Frameworks */,
-				D438C87D190C173C0021836B /* CoreGraphics.framework in Frameworks */,
-				D438C87F190C173C0021836B /* UIKit.framework in Frameworks */,
-				D438C87B190C173C0021836B /* Foundation.framework in Frameworks */,
-				D45DE98862A948A8A52E8596 /* libPods.a in Frameworks */,
+				99E0B89A210D40CC987C2F12 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D438C895190C173C0021836B /* Frameworks */ = {
+		26BD770E19CDE87400B00969 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D438C89A190C173C0021836B /* XCTest.framework in Frameworks */,
-				D438C89C190C173C0021836B /* UIKit.framework in Frameworks */,
-				D438C89B190C173C0021836B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BD772719CDEA8400B00969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26BD772819CDEA8400B00969 /* libPods.a in Frameworks */,
+				1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		267B566A190D903300EADA44 /* Models */ = {
+		26BD76EF19CDE87400B00969 = {
 			isa = PBXGroup;
 			children = (
-				267B566B190D904100EADA44 /* Route.h */,
-				267B566C190D904100EADA44 /* Route.m */,
-				267B566E190DA69F00EADA44 /* BusStop.h */,
-				267B566F190DA69F00EADA44 /* BusStop.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		D438C86E190C173C0021836B = {
-			isa = PBXGroup;
-			children = (
-				D438C880190C173C0021836B /* BusTicker */,
-				D438C89F190C173C0021836B /* BusTickerTests */,
-				D438C879190C173C0021836B /* Frameworks */,
-				D438C878190C173C0021836B /* Products */,
-				1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */,
+				26BD76FA19CDE87400B00969 /* BusTicker */,
+				26BD771419CDE87400B00969 /* BusTickerTests */,
+				26BD76F919CDE87400B00969 /* Products */,
+				CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */,
+				FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */,
+				8495112D26EA40EFB60CC06F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D438C878190C173C0021836B /* Products */ = {
+		26BD76F919CDE87400B00969 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D438C877190C173C0021836B /* BusTickr.app */,
-				D438C898190C173C0021836B /* BusTickerTests.xctest */,
+				26BD76F819CDE87400B00969 /* BusTicker.app */,
+				26BD771119CDE87400B00969 /* BusTickerTests.xctest */,
+				26BD773119CDEA8400B00969 /* Staging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D438C879190C173C0021836B /* Frameworks */ = {
+		26BD76FA19CDE87400B00969 /* BusTicker */ = {
 			isa = PBXGroup;
 			children = (
-				D4B0BD78190C9394003A4EBB /* MapKit.framework */,
-				D485CC68190C548B006D0735 /* MessageUI.framework */,
-				D485CC66190C5483006D0735 /* CFNetwork.framework */,
-				D485CC64190C547C006D0735 /* CoreMotion.framework */,
-				D485CC62190C5475006D0735 /* CoreBluetooth.framework */,
-				D485CC60190C546C006D0735 /* ExternalAccessory.framework */,
-				D485CC5E190C5462006D0735 /* libz.dylib */,
-				D438C87A190C173C0021836B /* Foundation.framework */,
-				D438C87C190C173C0021836B /* CoreGraphics.framework */,
-				D438C87E190C173C0021836B /* UIKit.framework */,
-				D438C899190C173C0021836B /* XCTest.framework */,
-				D78C1C8C08C94521AE568AD6 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D438C880190C173C0021836B /* BusTicker */ = {
-			isa = PBXGroup;
-			children = (
-				267B566A190D903300EADA44 /* Models */,
-				D438C881190C173C0021836B /* Supporting Files */,
-				D4FD6DA4190C3E1A00C577EE /* resources */,
-				D438C889190C173C0021836B /* AppDelegate.h */,
-				D438C88A190C173C0021836B /* AppDelegate.m */,
-				D438C88C190C173C0021836B /* Main.storyboard */,
-				D438C892190C173C0021836B /* Images.xcassets */,
-				D438C88F190C173C0021836B /* BusTickerViewController.h */,
-				D438C890190C173C0021836B /* BusTickerViewController.m */,
-				D4B0BD75190C91D5003A4EBB /* BusMapViewController.h */,
-				D4B0BD76190C91D5003A4EBB /* BusMapViewController.m */,
-				26210327190CA84B00B00726 /* LocationManager.h */,
-				26210328190CA84B00B00726 /* LocationManager.m */,
-				267B5667190D75D100EADA44 /* ServiceManager.h */,
-				267B5668190D75D100EADA44 /* ServiceManager.m */,
+				26BD76FF19CDE87400B00969 /* AppDelegate.h */,
+				26BD770019CDE87400B00969 /* AppDelegate.m */,
+				26BD770219CDE87400B00969 /* ViewController.h */,
+				26BD770319CDE87400B00969 /* ViewController.m */,
+				26BD770519CDE87400B00969 /* Main.storyboard */,
+				26BD770819CDE87400B00969 /* Images.xcassets */,
+				26BD770A19CDE87400B00969 /* LaunchScreen.xib */,
+				26BD76FB19CDE87400B00969 /* Supporting Files */,
 			);
 			path = BusTicker;
 			sourceTree = "<group>";
 		};
-		D438C881190C173C0021836B /* Supporting Files */ = {
+		26BD76FB19CDE87400B00969 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D438C882190C173C0021836B /* BusTicker-Info.plist */,
-				D438C883190C173C0021836B /* InfoPlist.strings */,
-				D438C886190C173C0021836B /* main.m */,
-				D438C888190C173C0021836B /* BusTicker-Prefix.pch */,
+				26BD773319CDEC2F00B00969 /* Staging.plist */,
+				26BD76FC19CDE87400B00969 /* Info.plist */,
+				26BD76FD19CDE87400B00969 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D438C89F190C173C0021836B /* BusTickerTests */ = {
+		26BD771419CDE87400B00969 /* BusTickerTests */ = {
 			isa = PBXGroup;
 			children = (
-				D438C8A5190C173C0021836B /* BusTickerTests.m */,
-				D438C8A0190C173C0021836B /* Supporting Files */,
+				26BD771719CDE87400B00969 /* BusTickerTests.m */,
+				26BD771519CDE87400B00969 /* Supporting Files */,
 			);
 			path = BusTickerTests;
 			sourceTree = "<group>";
 		};
-		D438C8A0190C173C0021836B /* Supporting Files */ = {
+		26BD771519CDE87400B00969 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D438C8A1190C173C0021836B /* BusTickerTests-Info.plist */,
-				D438C8A2190C173C0021836B /* InfoPlist.strings */,
+				26BD771619CDE87400B00969 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D4FD6DA4190C3E1A00C577EE /* resources */ = {
+		8495112D26EA40EFB60CC06F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4B0BD7A190C98F8003A4EBB /* current_loc_compass.png */,
-				D4FD6DA5190C3E1A00C577EE /* favorite.png */,
-				D4FD6DA6190C3E1A00C577EE /* map.png */,
+				265D538C17A24F79A725CE1D /* libPods.a */,
+				F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */,
 			);
-			path = resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D438C876190C173C0021836B /* BusTicker */ = {
+		26BD76F719CDE87400B00969 /* BusTicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D438C8A9190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTicker" */;
+			buildConfigurationList = 26BD771B19CDE87400B00969 /* Build configuration list for PBXNativeTarget "BusTicker" */;
 			buildPhases = (
-				087AC05D01DA4A789228E84E /* Check Pods Manifest.lock */,
-				D438C873190C173C0021836B /* Sources */,
-				D438C874190C173C0021836B /* Frameworks */,
-				D438C875190C173C0021836B /* Resources */,
-				DE6CEAEA89BE419BBE1FC920 /* Copy Pods Resources */,
+				F8BEFD29560246129EF30493 /* Check Pods Manifest.lock */,
+				26BD76F419CDE87400B00969 /* Sources */,
+				26BD76F519CDE87400B00969 /* Frameworks */,
+				26BD76F619CDE87400B00969 /* Resources */,
+				BD359476D49F4F04BB1AA34A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,45 +177,65 @@
 			);
 			name = BusTicker;
 			productName = BusTicker;
-			productReference = D438C877190C173C0021836B /* BusTickr.app */;
+			productReference = 26BD76F819CDE87400B00969 /* BusTicker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D438C897190C173C0021836B /* BusTickerTests */ = {
+		26BD771019CDE87400B00969 /* BusTickerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D438C8AC190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTickerTests" */;
+			buildConfigurationList = 26BD771E19CDE87400B00969 /* Build configuration list for PBXNativeTarget "BusTickerTests" */;
 			buildPhases = (
-				D438C894190C173C0021836B /* Sources */,
-				D438C895190C173C0021836B /* Frameworks */,
-				D438C896190C173C0021836B /* Resources */,
+				26BD770D19CDE87400B00969 /* Sources */,
+				26BD770E19CDE87400B00969 /* Frameworks */,
+				26BD770F19CDE87400B00969 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D438C89E190C173C0021836B /* PBXTargetDependency */,
+				26BD771319CDE87400B00969 /* PBXTargetDependency */,
 			);
 			name = BusTickerTests;
 			productName = BusTickerTests;
-			productReference = D438C898190C173C0021836B /* BusTickerTests.xctest */;
+			productReference = 26BD771119CDE87400B00969 /* BusTickerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26BD772119CDEA8400B00969 /* Staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26BD772E19CDEA8400B00969 /* Build configuration list for PBXNativeTarget "Staging" */;
+			buildPhases = (
+				26BD772219CDEA8400B00969 /* Check Pods Manifest.lock */,
+				26BD772319CDEA8400B00969 /* Sources */,
+				26BD772719CDEA8400B00969 /* Frameworks */,
+				26BD772919CDEA8400B00969 /* Resources */,
+				26BD772D19CDEA8400B00969 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Staging;
+			productName = BusTicker;
+			productReference = 26BD773119CDEA8400B00969 /* Staging.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D438C86F190C173C0021836B /* Project object */ = {
+		26BD76F019CDE87400B00969 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = HardwareHackMKE;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = BusTicker;
 				TargetAttributes = {
-					D438C876190C173C0021836B = {
-						DevelopmentTeam = 696JWCZD9Y;
+					26BD76F719CDE87400B00969 = {
+						CreatedOnToolsVersion = 6.0;
 					};
-					D438C897190C173C0021836B = {
-						TestTargetID = D438C876190C173C0021836B;
+					26BD771019CDE87400B00969 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 26BD76F719CDE87400B00969;
 					};
 				};
 			};
-			buildConfigurationList = D438C872190C173C0021836B /* Build configuration list for PBXProject "BusTicker" */;
+			buildConfigurationList = 26BD76F319CDE87400B00969 /* Build configuration list for PBXProject "BusTicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -301,43 +243,50 @@
 				en,
 				Base,
 			);
-			mainGroup = D438C86E190C173C0021836B;
-			productRefGroup = D438C878190C173C0021836B /* Products */;
+			mainGroup = 26BD76EF19CDE87400B00969;
+			productRefGroup = 26BD76F919CDE87400B00969 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D438C876190C173C0021836B /* BusTicker */,
-				D438C897190C173C0021836B /* BusTickerTests */,
+				26BD76F719CDE87400B00969 /* BusTicker */,
+				26BD772119CDEA8400B00969 /* Staging */,
+				26BD771019CDE87400B00969 /* BusTickerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D438C875190C173C0021836B /* Resources */ = {
+		26BD76F619CDE87400B00969 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D438C893190C173C0021836B /* Images.xcassets in Resources */,
-				D4B0BD7B190C98F8003A4EBB /* current_loc_compass.png in Resources */,
-				D438C885190C173C0021836B /* InfoPlist.strings in Resources */,
-				D438C88E190C173C0021836B /* Main.storyboard in Resources */,
-				D4FD6DA7190C3E1A00C577EE /* favorite.png in Resources */,
-				D4FD6DA8190C3E1A00C577EE /* map.png in Resources */,
+				26BD770719CDE87400B00969 /* Main.storyboard in Resources */,
+				26BD770C19CDE87400B00969 /* LaunchScreen.xib in Resources */,
+				26BD770919CDE87400B00969 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D438C896190C173C0021836B /* Resources */ = {
+		26BD770F19CDE87400B00969 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D438C8A4190C173C0021836B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BD772919CDEA8400B00969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26BD772A19CDEA8400B00969 /* Main.storyboard in Resources */,
+				26BD772B19CDEA8400B00969 /* LaunchScreen.xib in Resources */,
+				26BD772C19CDEA8400B00969 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		087AC05D01DA4A789228E84E /* Check Pods Manifest.lock */ = {
+		26BD772219CDEA8400B00969 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,7 +301,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DE6CEAEA89BE419BBE1FC920 /* Copy Pods Resources */ = {
+		26BD772D19CDEA8400B00969 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Staging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD359476D49F4F04BB1AA34A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,71 +331,83 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8BEFD29560246129EF30493 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D438C873190C173C0021836B /* Sources */ = {
+		26BD76F419CDE87400B00969 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B0BD77190C91D5003A4EBB /* BusMapViewController.m in Sources */,
-				26210329190CA84B00B00726 /* LocationManager.m in Sources */,
-				D438C891190C173C0021836B /* BusTickerViewController.m in Sources */,
-				267B5669190D75D100EADA44 /* ServiceManager.m in Sources */,
-				267B5670190DA69F00EADA44 /* BusStop.m in Sources */,
-				D438C88B190C173C0021836B /* AppDelegate.m in Sources */,
-				D438C887190C173C0021836B /* main.m in Sources */,
-				267B566D190D904100EADA44 /* Route.m in Sources */,
+				26BD770419CDE87400B00969 /* ViewController.m in Sources */,
+				26BD770119CDE87400B00969 /* AppDelegate.m in Sources */,
+				26BD76FE19CDE87400B00969 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D438C894190C173C0021836B /* Sources */ = {
+		26BD770D19CDE87400B00969 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D438C8A6190C173C0021836B /* BusTickerTests.m in Sources */,
+				26BD771819CDE87400B00969 /* BusTickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BD772319CDEA8400B00969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26BD772419CDEA8400B00969 /* ViewController.m in Sources */,
+				26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */,
+				26BD772619CDEA8400B00969 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D438C89E190C173C0021836B /* PBXTargetDependency */ = {
+		26BD771319CDE87400B00969 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D438C876190C173C0021836B /* BusTicker */;
-			targetProxy = D438C89D190C173C0021836B /* PBXContainerItemProxy */;
+			target = 26BD76F719CDE87400B00969 /* BusTicker */;
+			targetProxy = 26BD771219CDE87400B00969 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D438C883190C173C0021836B /* InfoPlist.strings */ = {
+		26BD770519CDE87400B00969 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D438C884190C173C0021836B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D438C88C190C173C0021836B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D438C88D190C173C0021836B /* Base */,
+				26BD770619CDE87400B00969 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D438C8A2190C173C0021836B /* InfoPlist.strings */ = {
+		26BD770A19CDE87400B00969 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D438C8A3190C173C0021836B /* en */,
+				26BD770B19CDE87400B00969 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D438C8A7190C173C0021836B /* Debug */ = {
+		26BD771919CDE87400B00969 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -446,9 +422,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -463,14 +441,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		D438C8A8190C173C0021836B /* Release */ = {
+		26BD771A19CDE87400B00969 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -485,10 +463,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -496,128 +476,131 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D438C8AA190C173C0021836B /* Debug */ = {
+		26BD771C19CDE87400B00969 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */;
+			baseConfigurationReference = CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BusTicker",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
-				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = BusTickr;
-				PROVISIONING_PROFILE = "ACAF2F08-A534-455C-8D0F-ED2F434F5BAA";
-				WRAPPER_EXTENSION = app;
+				INFOPLIST_FILE = BusTicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		D438C8AB190C173C0021836B /* Release */ = {
+		26BD771D19CDE87400B00969 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1490CE6EB85846EB9E921FC4 /* Pods.xcconfig */;
+			baseConfigurationReference = CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BusTicker",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
-				INFOPLIST_FILE = "BusTicker/BusTicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = BusTickr;
-				PROVISIONING_PROFILE = "ACAF2F08-A534-455C-8D0F-ED2F434F5BAA";
-				WRAPPER_EXTENSION = app;
+				INFOPLIST_FILE = BusTicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		D438C8AD190C173C0021836B /* Debug */ = {
+		26BD771F19CDE87400B00969 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BusTickerTests/BusTickerTests-Info.plist";
+				INFOPLIST_FILE = BusTickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
 			};
 			name = Debug;
 		};
-		D438C8AE190C173C0021836B /* Release */ = {
+		26BD772019CDE87400B00969 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BusTicker/BusTicker-Prefix.pch";
-				INFOPLIST_FILE = "BusTickerTests/BusTickerTests-Info.plist";
+				INFOPLIST_FILE = BusTickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
+			};
+			name = Release;
+		};
+		26BD772F19CDEA8400B00969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Staging;
+			};
+			name = Debug;
+		};
+		26BD773019CDEA8400B00969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Staging;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D438C872190C173C0021836B /* Build configuration list for PBXProject "BusTicker" */ = {
+		26BD76F319CDE87400B00969 /* Build configuration list for PBXProject "BusTicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D438C8A7190C173C0021836B /* Debug */,
-				D438C8A8190C173C0021836B /* Release */,
+				26BD771919CDE87400B00969 /* Debug */,
+				26BD771A19CDE87400B00969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D438C8A9190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTicker" */ = {
+		26BD771B19CDE87400B00969 /* Build configuration list for PBXNativeTarget "BusTicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D438C8AA190C173C0021836B /* Debug */,
-				D438C8AB190C173C0021836B /* Release */,
+				26BD771C19CDE87400B00969 /* Debug */,
+				26BD771D19CDE87400B00969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D438C8AC190C173C0021836B /* Build configuration list for PBXNativeTarget "BusTickerTests" */ = {
+		26BD771E19CDE87400B00969 /* Build configuration list for PBXNativeTarget "BusTickerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D438C8AD190C173C0021836B /* Debug */,
-				D438C8AE190C173C0021836B /* Release */,
+				26BD771F19CDE87400B00969 /* Debug */,
+				26BD772019CDE87400B00969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26BD772E19CDEA8400B00969 /* Build configuration list for PBXNativeTarget "Staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26BD772F19CDEA8400B00969 /* Debug */,
+				26BD773019CDEA8400B00969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D438C86F190C173C0021836B /* Project object */;
+	rootObject = 26BD76F019CDE87400B00969 /* Project object */;
 }
