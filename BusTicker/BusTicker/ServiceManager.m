@@ -10,12 +10,12 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-//#define kBaseURL    @"http://bustickrdev.sstools.co:3000"
-#define kBaseURL    @"http://localhost:3000"
+#define kBaseURL    @"http://bustickrdev:8081"
+//#define kBaseURL    @"http://localhost:3000"
 
 @implementation ServiceManager
 
-// http://bustickrdev.sstools.co:3000/routes
+// /routes
 // [{"route":21,"direction":"EAST"},{"route":21,"direction":"WEST"}]
 - (void)fetchRoutesWithCompletionBlock:(void (^)(NSArray *routes, NSError *error))completionBlock {
     AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:kBaseURL]];
@@ -41,7 +41,7 @@
     }];
 }
 
-// http://bustickrdev.sstools.co:3000/stop/21/EAST/
+// /stop/21/EAST/
 - (void)fetchStopsForRoute:(Route *)route
      withCompletionBlock:(void (^)(NSArray *stops, NSError *error))completionBlock {
     AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:kBaseURL]];
@@ -70,7 +70,7 @@
     }];
 }
 
-// http://bustickrdev.sstools.co:3000/predictions/2220
+// /predictions/2220
 //[{"age":0,"prediction":"2014-04-27T4:22-05:00","delayed":false,"route":"21","direction":"EAST"},{"age":0,"prediction":"2014-04-27T4:42-05:00","delayed":false,"route":"21","direction":"EAST"},{"age":0,"prediction":"2014-04-27T5:02-05:00","delayed":false,"route":"21","direction":"EAST"},{"age":0,"prediction":"2014-04-27T5:22-05:00","delayed":false,"route":"21","direction":"EAST"}]
 - (void)fetchPredictionsForStop:(NSInteger)stopId withCompletionBlock:(void (^)(NSArray *predictions, NSError *error))completionBlock {
     AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:kBaseURL]];
