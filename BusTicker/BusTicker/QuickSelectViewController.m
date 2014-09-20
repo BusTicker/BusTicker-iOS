@@ -10,6 +10,8 @@
 
 @interface QuickSelectViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 @end
 
 @implementation QuickSelectViewController

@@ -16,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Po5-Yo-OYn">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BFe-Rt-ilx">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,6 +178,9 @@
                     <navigationItem key="navigationItem" title="Bus Ticker" id="FFp-Ht-N46">
                         <barButtonItem key="rightBarButtonItem" title="Bus Stops" id="JBe-Vx-HFn"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="BFe-Rt-ilx" id="is3-vq-byr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,6 +253,10 @@
                             <constraint firstAttribute="trailing" secondItem="rYS-FJ-L87" secondAttribute="trailing" id="vPr-Tf-lJE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="woo-zM-135" id="r2M-h4-Gh7"/>
+                        <outlet property="tableView" destination="rYS-FJ-L87" id="uzu-kg-oSH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35Y-FS-ysK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,6 +331,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="rsW-Qb-zq6" id="5Ia-ek-Dw8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcI-bS-jts" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

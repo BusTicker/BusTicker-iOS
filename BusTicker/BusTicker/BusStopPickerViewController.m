@@ -12,6 +12,9 @@
 
 @interface BusStopPickerViewController () <MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation BusStopPickerViewController
