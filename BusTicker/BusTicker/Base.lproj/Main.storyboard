@@ -7,7 +7,7 @@
         <!--Bus Ticker-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="vXZ-lx-hvc" customClass="HomeCollectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -171,6 +171,10 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="VZ1-Up-0vr"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="GQj-Cm-89J"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -183,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="671" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Bus Stop Picker View Controller-->
         <scene sceneID="g18-ym-1Bk">
             <objects>
-                <viewController storyboardIdentifier="MapVC" id="a6p-Ok-IlI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BusStopPickerVC" id="a6p-Ok-IlI" customClass="BusStopPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZ6-zc-NvC"/>
                         <viewControllerLayoutGuide type="bottom" id="8VT-PI-NDv"/>
@@ -197,6 +201,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="woo-zM-135">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <connections>
+                                    <outlet property="delegate" destination="a6p-Ok-IlI" id="RIy-4a-1Wp"/>
+                                </connections>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rYS-FJ-L87">
                                 <rect key="frame" x="0.0" y="368" width="320" height="200"/>
@@ -234,6 +241,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="a6p-Ok-IlI" id="yXh-mk-JdE"/>
+                                    <outlet property="delegate" destination="a6p-Ok-IlI" id="nqk-OW-1mq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -248,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="1064" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Quick Select View Controller-->
         <scene sceneID="7vn-ac-bGX">
             <objects>
-                <viewController storyboardIdentifier="QuickSelectVC" id="kNQ-8d-XE9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuickSelectVC" id="kNQ-8d-XE9" customClass="QuickSelectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1j1-1q-Yas"/>
                         <viewControllerLayoutGuide type="bottom" id="J1O-Cx-b1r"/>
@@ -309,6 +320,10 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="kNQ-8d-XE9" id="R1B-GM-lbn"/>
+                                    <outlet property="delegate" destination="kNQ-8d-XE9" id="7Qd-M9-9jq"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

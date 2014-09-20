@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
+		2669198C19CE098600404F9A /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198B19CE098600404F9A /* HomeCollectionViewController.m */; };
+		2669198D19CE098600404F9A /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198B19CE098600404F9A /* HomeCollectionViewController.m */; };
+		2669199019CE09B300404F9A /* BusStopPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198F19CE09B300404F9A /* BusStopPickerViewController.m */; };
+		2669199119CE09B300404F9A /* BusStopPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198F19CE09B300404F9A /* BusStopPickerViewController.m */; };
+		2669199419CE09C900404F9A /* QuickSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669199319CE09C900404F9A /* QuickSelectViewController.m */; };
+		2669199519CE09C900404F9A /* QuickSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669199319CE09C900404F9A /* QuickSelectViewController.m */; };
 		26BD76FE19CDE87400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
 		26BD770119CDE87400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
 		26BD770719CDE87400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
@@ -35,6 +41,12 @@
 
 /* Begin PBXFileReference section */
 		265D538C17A24F79A725CE1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2669198A19CE098600404F9A /* HomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
+		2669198B19CE098600404F9A /* HomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
+		2669198E19CE09B300404F9A /* BusStopPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopPickerViewController.h; sourceTree = "<group>"; };
+		2669198F19CE09B300404F9A /* BusStopPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopPickerViewController.m; sourceTree = "<group>"; };
+		2669199219CE09C900404F9A /* QuickSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSelectViewController.h; sourceTree = "<group>"; };
+		2669199319CE09C900404F9A /* QuickSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSelectViewController.m; sourceTree = "<group>"; };
 		26BD76F819CDE87400B00969 /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BD76FC19CDE87400B00969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BD76FD19CDE87400B00969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2669198919CE095D00404F9A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2669198A19CE098600404F9A /* HomeCollectionViewController.h */,
+				2669198B19CE098600404F9A /* HomeCollectionViewController.m */,
+				2669198E19CE09B300404F9A /* BusStopPickerViewController.h */,
+				2669198F19CE09B300404F9A /* BusStopPickerViewController.m */,
+				2669199219CE09C900404F9A /* QuickSelectViewController.h */,
+				2669199319CE09C900404F9A /* QuickSelectViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		26BD76EF19CDE87400B00969 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +131,7 @@
 		26BD76FA19CDE87400B00969 /* BusTicker */ = {
 			isa = PBXGroup;
 			children = (
+				2669198919CE095D00404F9A /* View Controllers */,
 				26BD76FF19CDE87400B00969 /* AppDelegate.h */,
 				26BD770019CDE87400B00969 /* AppDelegate.m */,
 				26BD770519CDE87400B00969 /* Main.storyboard */,
@@ -376,7 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				26BD770119CDE87400B00969 /* AppDelegate.m in Sources */,
+				2669199419CE09C900404F9A /* QuickSelectViewController.m in Sources */,
+				2669199019CE09B300404F9A /* BusStopPickerViewController.m in Sources */,
 				26BD76FE19CDE87400B00969 /* main.m in Sources */,
+				2669198C19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +422,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */,
+				2669199519CE09C900404F9A /* QuickSelectViewController.m in Sources */,
+				2669199119CE09B300404F9A /* BusStopPickerViewController.m in Sources */,
 				26BD772619CDEA8400B00969 /* main.m in Sources */,
+				2669198D19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
