@@ -10,12 +10,10 @@
 		1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
 		26BD76FE19CDE87400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
 		26BD770119CDE87400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
-		26BD770419CDE87400B00969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770319CDE87400B00969 /* ViewController.m */; };
 		26BD770719CDE87400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
 		26BD770919CDE87400B00969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770819CDE87400B00969 /* Images.xcassets */; };
 		26BD770C19CDE87400B00969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770A19CDE87400B00969 /* LaunchScreen.xib */; };
 		26BD771819CDE87400B00969 /* BusTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD771719CDE87400B00969 /* BusTickerTests.m */; };
-		26BD772419CDEA8400B00969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770319CDE87400B00969 /* ViewController.m */; };
 		26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
 		26BD772619CDEA8400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
 		26BD772819CDEA8400B00969 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D538C17A24F79A725CE1D /* libPods.a */; };
@@ -42,8 +40,6 @@
 		26BD76FD19CDE87400B00969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26BD76FF19CDE87400B00969 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26BD770019CDE87400B00969 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		26BD770219CDE87400B00969 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26BD770319CDE87400B00969 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		26BD770619CDE87400B00969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26BD770819CDE87400B00969 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26BD770B19CDE87400B00969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -112,8 +108,6 @@
 			children = (
 				26BD76FF19CDE87400B00969 /* AppDelegate.h */,
 				26BD770019CDE87400B00969 /* AppDelegate.m */,
-				26BD770219CDE87400B00969 /* ViewController.h */,
-				26BD770319CDE87400B00969 /* ViewController.m */,
 				26BD770519CDE87400B00969 /* Main.storyboard */,
 				26BD770819CDE87400B00969 /* Images.xcassets */,
 				26BD770A19CDE87400B00969 /* LaunchScreen.xib */,
@@ -170,6 +164,7 @@
 				26BD76F519CDE87400B00969 /* Frameworks */,
 				26BD76F619CDE87400B00969 /* Resources */,
 				BD359476D49F4F04BB1AA34A /* Copy Pods Resources */,
+				2669198719CDF30700404F9A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,6 +202,7 @@
 				26BD772719CDEA8400B00969 /* Frameworks */,
 				26BD772919CDEA8400B00969 /* Resources */,
 				26BD772D19CDEA8400B00969 /* Copy Pods Resources */,
+				2669198819CDF31800404F9A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -286,6 +282,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2669198719CDF30700404F9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M%S\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
+		};
+		2669198819CDF31800404F9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M%S\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
+		};
 		26BD772219CDEA8400B00969 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BD770419CDE87400B00969 /* ViewController.m in Sources */,
 				26BD770119CDE87400B00969 /* AppDelegate.m in Sources */,
 				26BD76FE19CDE87400B00969 /* main.m in Sources */,
 			);
@@ -371,7 +392,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BD772419CDEA8400B00969 /* ViewController.m in Sources */,
 				26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */,
 				26BD772619CDEA8400B00969 /* main.m in Sources */,
 			);
@@ -489,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusTicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -500,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusTicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
