@@ -259,4 +259,85 @@
     }
 }
 
++ (void)drawBusStopWithScale: (CGFloat)scale;
+{
+    //// General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    //// Color Declarations
+    UIColor* myWhite = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
+
+    //// Variable Declarations
+    CGFloat scaleX = scale / 100.0;
+    CGFloat scaleY = scale / 100.0;
+
+    //// Group
+    {
+        CGContextSaveGState(context);
+        CGContextScaleCTM(context, scaleX, scaleY);
+
+
+
+        //// Bus Drawing
+        UIBezierPath* busPath = UIBezierPath.bezierPath;
+        [busPath moveToPoint: CGPointMake(423.55, 89.5)];
+        [busPath addCurveToPoint: CGPointMake(379.83, 45.52) controlPoint1: CGPointMake(418.67, 65.05) controlPoint2: CGPointMake(403.16, 55.29)];
+        [busPath addCurveToPoint: CGPointMake(261.18, 24.03) controlPoint1: CGPointMake(356.5, 35.69) controlPoint2: CGPointMake(301.9, 24.03)];
+        [busPath addCurveToPoint: CGPointMake(142.47, 45.52) controlPoint1: CGPointMake(220.4, 24.03) controlPoint2: CGPointMake(165.8, 35.69)];
+        [busPath addCurveToPoint: CGPointMake(98.75, 89.5) controlPoint1: CGPointMake(119.14, 55.29) controlPoint2: CGPointMake(103.63, 65.05)];
+        [busPath addLineToPoint: CGPointMake(81.24, 225.11)];
+        [busPath addLineToPoint: CGPointMake(81.24, 411.95)];
+        [busPath addLineToPoint: CGPointMake(111.45, 411.95)];
+        [busPath addLineToPoint: CGPointMake(111.45, 441.25)];
+        [busPath addCurveToPoint: CGPointMake(163.36, 441.25) controlPoint1: CGPointMake(111.45, 476.92) controlPoint2: CGPointMake(163.36, 476.92)];
+        [busPath addLineToPoint: CGPointMake(163.36, 411.95)];
+        [busPath addLineToPoint: CGPointMake(359.07, 411.95)];
+        [busPath addLineToPoint: CGPointMake(359.07, 441.25)];
+        [busPath addCurveToPoint: CGPointMake(410.85, 441.25) controlPoint1: CGPointMake(359.07, 476.92) controlPoint2: CGPointMake(410.85, 476.92)];
+        [busPath addLineToPoint: CGPointMake(410.85, 411.95)];
+        [busPath addLineToPoint: CGPointMake(441, 411.95)];
+        [busPath addLineToPoint: CGPointMake(441, 225.11)];
+        [busPath addLineToPoint: CGPointMake(423.55, 89.5)];
+        [busPath closePath];
+        [busPath moveToPoint: CGPointMake(179.81, 54.03)];
+        [busPath addLineToPoint: CGPointMake(342.49, 54.03)];
+        [busPath addCurveToPoint: CGPointMake(342.49, 84.52) controlPoint1: CGPointMake(358.5, 54.03) controlPoint2: CGPointMake(358.5, 84.52)];
+        [busPath addLineToPoint: CGPointMake(179.81, 84.52)];
+        [busPath addCurveToPoint: CGPointMake(179.81, 54.03) controlPoint1: CGPointMake(163.8, 84.52) controlPoint2: CGPointMake(163.8, 54.03)];
+        [busPath closePath];
+        [busPath moveToPoint: CGPointMake(137.34, 355.87)];
+        [busPath addCurveToPoint: CGPointMake(110.01, 328.27) controlPoint1: CGPointMake(122.33, 355.87) controlPoint2: CGPointMake(110.01, 343.58)];
+        [busPath addCurveToPoint: CGPointMake(137.34, 300.73) controlPoint1: CGPointMake(110.01, 313.08) controlPoint2: CGPointMake(122.33, 300.73)];
+        [busPath addCurveToPoint: CGPointMake(164.74, 328.27) controlPoint1: CGPointMake(152.48, 300.73) controlPoint2: CGPointMake(164.74, 313.08)];
+        [busPath addCurveToPoint: CGPointMake(137.34, 355.87) controlPoint1: CGPointMake(164.74, 343.58) controlPoint2: CGPointMake(152.48, 355.87)];
+        [busPath closePath];
+        [busPath moveToPoint: CGPointMake(384.96, 355.87)];
+        [busPath addCurveToPoint: CGPointMake(357.5, 328.27) controlPoint1: CGPointMake(369.82, 355.87) controlPoint2: CGPointMake(357.5, 343.58)];
+        [busPath addCurveToPoint: CGPointMake(384.96, 300.73) controlPoint1: CGPointMake(357.5, 313.08) controlPoint2: CGPointMake(369.82, 300.73)];
+        [busPath addCurveToPoint: CGPointMake(412.23, 328.27) controlPoint1: CGPointMake(399.97, 300.73) controlPoint2: CGPointMake(412.23, 313.08)];
+        [busPath addCurveToPoint: CGPointMake(384.96, 355.87) controlPoint1: CGPointMake(412.23, 343.58) controlPoint2: CGPointMake(399.97, 355.87)];
+        [busPath closePath];
+        [busPath moveToPoint: CGPointMake(395.72, 239.41)];
+        [busPath addLineToPoint: CGPointMake(126.96, 239.41)];
+        [busPath addCurveToPoint: CGPointMake(112.64, 224.98) controlPoint1: CGPointMake(119.14, 239.41) controlPoint2: CGPointMake(112.64, 232.86)];
+        [busPath addCurveToPoint: CGPointMake(113.14, 221.2) controlPoint1: CGPointMake(112.64, 223.66) controlPoint2: CGPointMake(112.89, 222.4)];
+        [busPath addLineToPoint: CGPointMake(127.46, 114.27)];
+        [busPath addCurveToPoint: CGPointMake(141.47, 102.42) controlPoint1: CGPointMake(128.65, 107.59) controlPoint2: CGPointMake(134.53, 102.42)];
+        [busPath addLineToPoint: CGPointMake(381.14, 102.42)];
+        [busPath addCurveToPoint: CGPointMake(395.22, 114.27) controlPoint1: CGPointMake(388.15, 102.42) controlPoint2: CGPointMake(393.97, 107.59)];
+        [busPath addLineToPoint: CGPointMake(409.48, 221.2)];
+        [busPath addCurveToPoint: CGPointMake(409.98, 224.98) controlPoint1: CGPointMake(409.73, 222.4) controlPoint2: CGPointMake(409.98, 223.66)];
+        [busPath addCurveToPoint: CGPointMake(395.72, 239.41) controlPoint1: CGPointMake(409.98, 232.86) controlPoint2: CGPointMake(403.54, 239.41)];
+        [busPath closePath];
+        busPath.miterLimit = 4;
+
+        [myWhite setFill];
+        [busPath fill];
+
+
+
+        CGContextRestoreGState(context);
+    }
+}
+
 @end

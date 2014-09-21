@@ -59,6 +59,13 @@
     LOG_FRAME(@"home view", self.view.frame);
     LOG_FRAME(@"collection view", self.collectionView.frame);
     
+    UIButton *busStopsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [busStopsButton addTarget:self action:@selector(busStopsButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    busStopsButton.frame = CGRectMake(0, 0, 30, 30);
+    [busStopsButton setImage:[StyleKit drawImage:DrawingBusStop size:busStopsButton.frame.size] forState:UIControlStateNormal];
+    UIBarButtonItem *busStopsBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:busStopsButton];
+    
+    [self.navigationItem setRightBarButtonItem:busStopsBarButtonItem animated:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -69,8 +76,17 @@
     self.collectionView.frame = self.view.bounds;
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark - User Action
 #pragma mark -
+
+- (void)busStopsButtonTapped:(UIButton *)button {
+    // TODO: implement
+    DebugLog(@"%@", NSStringFromSelector(_cmd));
+}
 
 - (void)pickerButtonTapped:(UIButton *)button {
     // TODO: implement

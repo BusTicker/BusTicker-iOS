@@ -10,6 +10,8 @@
 		1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
 		2610565E19CE7DF6007B243E /* PulsingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610565D19CE7DF6007B243E /* PulsingView.m */; };
 		2610565F19CE7DF6007B243E /* PulsingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610565D19CE7DF6007B243E /* PulsingView.m */; };
+		2610566219CE8C80007B243E /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610566119CE8C80007B243E /* BaseNavigationViewController.m */; };
+		2610566319CE8C80007B243E /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610566119CE8C80007B243E /* BaseNavigationViewController.m */; };
 		26302DC619CE2B600033E826 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC519CE2B600033E826 /* StyleKit.m */; };
 		26302DC719CE2B600033E826 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC519CE2B600033E826 /* StyleKit.m */; };
 		26302DCA19CE2BB70033E826 /* StyleKit+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC919CE2BB70033E826 /* StyleKit+Additions.m */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		2610565C19CE7DF6007B243E /* PulsingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingView.h; sourceTree = "<group>"; };
 		2610565D19CE7DF6007B243E /* PulsingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingView.m; sourceTree = "<group>"; };
+		2610566019CE8C80007B243E /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		2610566119CE8C80007B243E /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		26302DC419CE2B600033E826 /* StyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleKit.h; sourceTree = "<group>"; };
 		26302DC519CE2B600033E826 /* StyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleKit.m; sourceTree = "<group>"; };
 		26302DC819CE2BB70033E826 /* StyleKit+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StyleKit+Additions.h"; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 		2669198919CE095D00404F9A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2610566019CE8C80007B243E /* BaseNavigationViewController.h */,
+				2610566119CE8C80007B243E /* BaseNavigationViewController.m */,
 				2669198A19CE098600404F9A /* HomeCollectionViewController.h */,
 				2669198B19CE098600404F9A /* HomeCollectionViewController.m */,
 				2669198E19CE09B300404F9A /* BusStopPickerViewController.h */,
@@ -456,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26302DCA19CE2BB70033E826 /* StyleKit+Additions.m in Sources */,
+				2610566219CE8C80007B243E /* BaseNavigationViewController.m in Sources */,
 				26BD770119CDE87400B00969 /* AppDelegate.m in Sources */,
 				2669199419CE09C900404F9A /* QuickSelectViewController.m in Sources */,
 				2669199019CE09B300404F9A /* BusStopPickerViewController.m in Sources */,
@@ -480,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26302DCB19CE2BB70033E826 /* StyleKit+Additions.m in Sources */,
+				2610566319CE8C80007B243E /* BaseNavigationViewController.m in Sources */,
 				26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */,
 				2669199519CE09C900404F9A /* QuickSelectViewController.m in Sources */,
 				2669199119CE09B300404F9A /* BusStopPickerViewController.m in Sources */,

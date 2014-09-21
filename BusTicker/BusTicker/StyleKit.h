@@ -19,5 +19,6 @@
 + (void)drawStarWithStarred: (BOOL)starred scale: (CGFloat)scale;
 + (void)drawPickerWithScale: (CGFloat)scale;
 + (void)drawEstimateCircleWithCircleScale: (CGFloat)circleScale scale: (CGFloat)scale;
++ (void)drawBusStopWithScale: (CGFloat)scale;
 
 @end

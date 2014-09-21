@@ -202,9 +202,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Bus Ticker" id="FFp-Ht-N46">
-                        <barButtonItem key="rightBarButtonItem" title="Bus Stops" id="JBe-Vx-HFn"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Bus Ticker" id="FFp-Ht-N46"/>
                     <connections>
                         <outlet property="collectionView" destination="BFe-Rt-ilx" id="is3-vq-byr"/>
                     </connections>
@@ -366,14 +364,18 @@
             </objects>
             <point key="canvasLocation" x="1472" y="136"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation View Controller-->
         <scene sceneID="Rbx-dc-xW1">
             <objects>
-                <navigationController storyboardIdentifier="MainNavVC" automaticallyAdjustsScrollViewInsets="NO" id="1AO-C8-pXL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavVC" automaticallyAdjustsScrollViewInsets="NO" id="1AO-C8-pXL" customClass="BaseNavigationViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pMy-IF-gvu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
