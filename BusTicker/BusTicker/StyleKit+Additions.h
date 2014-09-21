@@ -14,6 +14,7 @@ typedef enum {
     DrawingNone = 0,
     DrawingDirections,
     DrawingBusStop,
+    DrawingForecast,
     DrawingStarOff,
     DrawingStarOn,
     DrawingPicker,

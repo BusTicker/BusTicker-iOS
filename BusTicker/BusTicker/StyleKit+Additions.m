@@ -49,6 +49,9 @@
         case DrawingBusStop:
             [StyleKit drawBusStopWithScale:scale];
             break;
+        case DrawingForecast:
+            [StyleKit drawForecastWithScale:scale];
+            break;
         case DrawingStarOff:
             [StyleKit drawStarWithStarred:FALSE scale:scale];
             break;

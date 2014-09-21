@@ -15,19 +15,24 @@
 
 #pragma mark -
 
-#define kTagBusStopLabel 1
-#define kTagRouteLabel 2
-#define kTagMainImageView 3
-#define kTagMainNumberLabel 4
-#define kTagMinutesLabel 5
-#define kTagWeatherImageView 6
-#define kTagTemperatureLabel 7
-#define kTagPickerButton 8
-#define kTagStarButton 9
-#define kTagDirectionsbutton 10
-#define kTagDistanceLabel 11
+#define kTagBusStopLabel 10
+#define kTagRouteLabel 11
 
-#define kTagPulsingView 12
+#define kTagPulsingView 20
+#define kTagEstimateLabel 21
+#define kTagMinutesLabel 22
+
+#define kTagPickerButton 30
+#define kTagPickerLabel 31
+
+#define kTagFavoriteButton 40
+#define kTagFavoriteLabel 41
+
+#define kTagForecastImageView 50
+#define kTagTemperatureLabel 51
+
+#define kTagDirectionsButton 60
+#define kTagDistanceLabel 61
 
 #pragma mark -
 
@@ -107,10 +112,10 @@
 #pragma mark - Animations
 #pragma mark -
 
-- (void)animatePulsingView:(PulsingView *)pulsingView {
+- (void)animatePulsingView:(PulsingView *)pulsingView atIndexPath:(NSIndexPath *)indexPath {
     [pulsingView stop];
     
-    pulsingView.innerColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.25];
+    pulsingView.innerColor = indexPath.item % 2 == 0 ? [[UIColor whiteColor] colorWithAlphaComponent:0.25] : [[UIColor darkGrayColor] colorWithAlphaComponent:0.25];
     pulsingView.outerColor = [UIColor colorWithRed:0.0392 green:0.3216 blue:0.5922 alpha:0.5];
     
     pulsingView.innerDiameter = CGRectGetWidth(pulsingView.frame) * 0.75;
@@ -138,24 +143,30 @@
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"BusStopCell" forIndexPath:indexPath];
     
-    //cell.backgroundColor = [UIColor redColor];
-    
     UILabel *busStopLabel = [AppHelper labelWithTag:kTagBusStopLabel inView:cell];
     UILabel *routeLabel = [AppHelper labelWithTag:kTagRouteLabel inView:cell];
-    UILabel *mainNumberLabel = [AppHelper labelWithTag:kTagMainNumberLabel inView:cell];
+    UILabel *mainNumberLabel = [AppHelper labelWithTag:kTagEstimateLabel inView:cell];
     UILabel *minutesLabel = [AppHelper labelWithTag:kTagMinutesLabel inView:cell];
+    UILabel *temperatureLabel = [AppHelper labelWithTag:kTagTemperatureLabel inView:cell];
+
+    busStopLabel.text = @"Bus Stop";
+    routeLabel.text = @"Route";
+    mainNumberLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)(indexPath.item + 1) * 3];
+    minutesLabel.text = @"minutes";
     
-    UIImageView *mainImageView = [AppHelper imageViewWithTag:kTagMainImageView inView:cell];
+    temperatureLabel.text = @"67";
+    
+    UIImageView *forecastImageView = [AppHelper imageViewWithTag:kTagForecastImageView inView:cell];
     
     UIButton *pickerButton = [AppHelper buttonWithTag:kTagPickerButton inView:cell];
-    UIButton *starButton = [AppHelper buttonWithTag:kTagStarButton inView:cell];
-    UIButton *directionsButton = [AppHelper buttonWithTag:kTagDirectionsbutton inView:cell];
+    UIButton *starButton = [AppHelper buttonWithTag:kTagFavoriteButton inView:cell];
+    UIButton *directionsButton = [AppHelper buttonWithTag:kTagDirectionsButton inView:cell];
     
-    UIImage *mainImage = [StyleKit drawEstimateCircleImageWithCircleScale:1.0f imageSize:mainImageView.frame.size];
-    mainImageView.image = mainImage;
+    UIImage *forecastImage = [StyleKit drawImage:DrawingForecast size:forecastImageView.frame.size];
+    forecastImageView.image = forecastImage;
     
     PulsingView *pulsingView = (PulsingView *)[cell viewWithTag:kTagPulsingView];
-    [self animatePulsingView:pulsingView];
+    [self animatePulsingView:pulsingView atIndexPath:indexPath];
     
     UIImage *pickerImage = [StyleKit drawImage:DrawingPicker size:CGSizeMake(50, 50)];
     [pickerButton setImage:pickerImage forState:UIControlStateNormal];
