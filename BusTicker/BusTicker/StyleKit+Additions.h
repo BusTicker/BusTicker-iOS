@@ -15,11 +15,14 @@ typedef enum {
     DrawingDirections,
     DrawingStarOff,
     DrawingStarOn,
-    DrawingPicker
+    DrawingPicker,
+    DrawingEstimateCircle
 } Drawing;
 
 @interface StyleKit (Additions)
 
 + (UIImage *)drawImage:(Drawing)drawing size:(CGSize)size;
+
++ (UIImage *)drawEstimateCircleImageWithCircleScale:(CGFloat)circleScale imageSize:(CGSize)imageSize;
 
 @end

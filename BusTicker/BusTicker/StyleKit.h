@@ -15,8 +15,9 @@
 @interface StyleKit : NSObject
 
 // Drawing Methods
-+ (void)drawDirectionsWithScaleX: (CGFloat)scaleX scaleY: (CGFloat)scaleY;
-+ (void)drawStarWithScaleX: (CGFloat)scaleX scaleY: (CGFloat)scaleY starred: (BOOL)starred;
-+ (void)drawPickerWithScaleX: (CGFloat)scaleX scaleY: (CGFloat)scaleY;
++ (void)drawDirectionsWithScale: (CGFloat)scale;
++ (void)drawStarWithStarred: (BOOL)starred scale: (CGFloat)scale;
++ (void)drawPickerWithScale: (CGFloat)scale;
++ (void)drawEstimateCircleWithCircleScale: (CGFloat)circleScale scale: (CGFloat)scale;
 
 @end

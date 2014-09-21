@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1AO-C8-pXL">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -45,21 +46,29 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ADb-wp-5dK">
-                                                    <rect key="frame" x="40" y="82" width="240" height="240"/>
+                                                <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmC-2G-jvp" customClass="PulsingView">
+                                                    <rect key="frame" x="10" y="52" width="300" height="300"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="240" id="24a-7t-KCe"/>
-                                                        <constraint firstAttribute="width" constant="240" id="yYm-yj-7jt"/>
+                                                        <constraint firstAttribute="width" constant="300" id="RMR-Hr-jM4"/>
+                                                        <constraint firstAttribute="height" constant="300" id="kDI-Iu-OB8"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ADb-wp-5dK">
+                                                    <rect key="frame" x="10" y="52" width="300" height="300"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="24a-7t-KCe"/>
+                                                        <constraint firstAttribute="width" constant="300" id="yYm-yj-7jt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93J-ia-GCT" userLabel="Main Number Label">
-                                                    <rect key="frame" x="126.5" y="128" width="69" height="148"/>
+                                                    <rect key="frame" x="126" y="128" width="69" height="148"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="124"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6o-eo-gXC" userLabel="Minutes Label">
-                                                    <rect key="frame" x="129" y="286" width="61" height="20.5"/>
+                                                    <rect key="frame" x="128" y="286" width="61" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -141,15 +150,23 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bus stops" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i1-mr-1IB" userLabel="Temperature Label">
+                                                    <rect key="frame" x="133" y="474" width="55" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="DmC-2G-jvp" secondAttribute="centerX" id="3aa-Pn-TaS"/>
                                             <constraint firstAttribute="bottom" secondItem="Jeb-xA-eNf" secondAttribute="bottom" constant="10" id="5w1-AT-aCQ"/>
                                             <constraint firstAttribute="centerX" secondItem="d74-XB-jwW" secondAttribute="centerX" id="A9r-j1-xpA"/>
                                             <constraint firstItem="gXS-Fs-Erm" firstAttribute="leading" secondItem="LaY-rG-sEd" secondAttribute="leading" constant="10" id="FmN-e8-hJa"/>
                                             <constraint firstItem="93J-ia-GCT" firstAttribute="centerX" secondItem="ADb-wp-5dK" secondAttribute="centerX" constant="0.75" id="GRj-OW-nYg"/>
+                                            <constraint firstItem="d74-XB-jwW" firstAttribute="centerX" secondItem="9i1-mr-1IB" secondAttribute="centerX" id="Ku5-pV-9pF"/>
                                             <constraint firstItem="Jeb-xA-eNf" firstAttribute="centerX" secondItem="HoZ-Yf-dqv" secondAttribute="centerX" id="Uz7-Se-gVq"/>
                                             <constraint firstAttribute="trailing" secondItem="ktg-2D-60F" secondAttribute="trailing" constant="10" id="WGk-9w-Cxl"/>
                                             <constraint firstItem="93J-ia-GCT" firstAttribute="centerX" secondItem="m6o-eo-gXC" secondAttribute="centerX" constant="2" id="aCd-VT-S5y"/>
@@ -162,7 +179,9 @@
                                             <constraint firstItem="93J-ia-GCT" firstAttribute="centerY" secondItem="ADb-wp-5dK" secondAttribute="centerY" id="pgp-R0-Tna"/>
                                             <constraint firstItem="m6o-eo-gXC" firstAttribute="top" secondItem="93J-ia-GCT" secondAttribute="bottom" constant="10" id="qDN-FS-2uO"/>
                                             <constraint firstAttribute="bottom" secondItem="Jeb-xA-eNf" secondAttribute="bottom" constant="10" id="qZd-zQ-NFu"/>
+                                            <constraint firstItem="9i1-mr-1IB" firstAttribute="top" secondItem="d74-XB-jwW" secondAttribute="bottom" id="qgg-H9-lAh"/>
                                             <constraint firstItem="bcB-Zc-A7U" firstAttribute="leading" secondItem="LaY-rG-sEd" secondAttribute="leading" constant="10" id="rlc-Bm-6ug"/>
+                                            <constraint firstAttribute="centerY" secondItem="DmC-2G-jvp" secondAttribute="centerY" constant="50" id="ryD-W4-7Xr"/>
                                             <constraint firstItem="ktg-2D-60F" firstAttribute="top" secondItem="LaY-rG-sEd" secondAttribute="top" constant="10" id="xBu-8g-kjW"/>
                                             <constraint firstItem="bcB-Zc-A7U" firstAttribute="top" secondItem="LaY-rG-sEd" secondAttribute="top" constant="10" id="xQp-e2-39H"/>
                                         </constraints>
@@ -350,7 +369,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Rbx-dc-xW1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1AO-C8-pXL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavVC" automaticallyAdjustsScrollViewInsets="NO" id="1AO-C8-pXL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pMy-IF-gvu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

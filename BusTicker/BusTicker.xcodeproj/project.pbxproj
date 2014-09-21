@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
+		2610565E19CE7DF6007B243E /* PulsingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610565D19CE7DF6007B243E /* PulsingView.m */; };
+		2610565F19CE7DF6007B243E /* PulsingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610565D19CE7DF6007B243E /* PulsingView.m */; };
 		26302DC619CE2B600033E826 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC519CE2B600033E826 /* StyleKit.m */; };
 		26302DC719CE2B600033E826 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC519CE2B600033E826 /* StyleKit.m */; };
 		26302DCA19CE2BB70033E826 /* StyleKit+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26302DC919CE2BB70033E826 /* StyleKit+Additions.m */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2610565C19CE7DF6007B243E /* PulsingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingView.h; sourceTree = "<group>"; };
+		2610565D19CE7DF6007B243E /* PulsingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingView.m; sourceTree = "<group>"; };
 		26302DC419CE2B600033E826 /* StyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleKit.h; sourceTree = "<group>"; };
 		26302DC519CE2B600033E826 /* StyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleKit.m; sourceTree = "<group>"; };
 		26302DC819CE2BB70033E826 /* StyleKit+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StyleKit+Additions.h"; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2610565B19CE7DCB007B243E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2610565C19CE7DF6007B243E /* PulsingView.h */,
+				2610565D19CE7DF6007B243E /* PulsingView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		26302DC319CE2B530033E826 /* StyleKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 			children = (
 				26302DC319CE2B530033E826 /* StyleKit */,
 				2669198919CE095D00404F9A /* View Controllers */,
+				2610565B19CE7DCB007B243E /* Views */,
 				26BD76FF19CDE87400B00969 /* AppDelegate.h */,
 				26BD770019CDE87400B00969 /* AppDelegate.m */,
 				26302DCC19CE36750033E826 /* AppHelper.h */,
@@ -448,6 +462,7 @@
 				26BD76FE19CDE87400B00969 /* main.m in Sources */,
 				26302DC619CE2B600033E826 /* StyleKit.m in Sources */,
 				2669198C19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
+				2610565E19CE7DF6007B243E /* PulsingView.m in Sources */,
 				26302DCE19CE36750033E826 /* AppHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +486,7 @@
 				26BD772619CDEA8400B00969 /* main.m in Sources */,
 				26302DC719CE2B600033E826 /* StyleKit.m in Sources */,
 				2669198D19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
+				2610565F19CE7DF6007B243E /* PulsingView.m in Sources */,
 				26302DCF19CE36750033E826 /* AppHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,6 +661,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Staging;
 			};
@@ -656,6 +673,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Staging;
 			};

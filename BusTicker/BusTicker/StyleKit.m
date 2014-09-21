@@ -21,13 +21,17 @@
 
 #pragma mark Drawing Methods
 
-+ (void)drawDirectionsWithScaleX: (CGFloat)scaleX scaleY: (CGFloat)scaleY;
++ (void)drawDirectionsWithScale: (CGFloat)scale;
 {
     //// General Declarations
     CGContextRef context = UIGraphicsGetCurrentContext();
 
     //// Color Declarations
     UIColor* myWhite = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
+
+    //// Variable Declarations
+    CGFloat scaleX = scale / 100.0;
+    CGFloat scaleY = scale / 100.0;
 
     //// Group
     {
@@ -117,7 +121,7 @@
     }
 }
 
-+ (void)drawStarWithScaleX: (CGFloat)scaleX scaleY: (CGFloat)scaleY starred: (BOOL)starred;
++ (void)drawStarWithStarred: (BOOL)starred scale: (CGFloat)scale;
 {
     //// General Declarations
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -128,6 +132,8 @@
 
     //// Variable Declarations
     UIColor* starredColor = starred ? myYellow : myWhite;
+    CGFloat scaleX = scale / 100.0;
+    CGFloat scaleY = scale / 100.0;
 
     //// Group
     {
@@ -158,13 +164,17 @@
     }
 }
 
-+ (void)drawPickerWithScaleX: (CGFloat)scaleX scaleY: (CGFloat)scaleY;
++ (void)drawPickerWithScale: (CGFloat)scale;
 {
     //// General Declarations
     CGContextRef context = UIGraphicsGetCurrentContext();
 
     //// Color Declarations
     UIColor* myWhite = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
+
+    //// Variable Declarations
+    CGFloat scaleX = scale / 100.0;
+    CGFloat scaleY = scale / 100.0;
 
     //// Group
     {
@@ -201,6 +211,47 @@
         [bezierPath closePath];
         [myWhite setFill];
         [bezierPath fill];
+
+
+
+        CGContextRestoreGState(context);
+    }
+}
+
++ (void)drawEstimateCircleWithCircleScale: (CGFloat)circleScale scale: (CGFloat)scale;
+{
+    //// General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    //// Color Declarations
+    UIColor* myWhite = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
+    UIColor* myTransparentWhite = [myWhite colorWithAlphaComponent: 0.5];
+    UIColor* myGray = [UIColor colorWithRed: 0.784 green: 0.784 blue: 0.784 alpha: 1];
+    UIColor* myTransparentGray = [myGray colorWithAlphaComponent: 0.5];
+
+    //// Variable Declarations
+    CGFloat circleScaleCalculated = circleScale / 100.0 * 470;
+    CGFloat circleOffsetCalculated = (512 - circleScaleCalculated) / 2.0;
+    CGFloat scaleX = scale / 100.0;
+    CGFloat scaleY = scale / 100.0;
+
+    //// Group
+    {
+        CGContextSaveGState(context);
+        CGContextScaleCTM(context, scaleX, scaleY);
+
+
+
+        //// Circle Drawing
+        UIBezierPath* circlePath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(circleOffsetCalculated, circleOffsetCalculated, circleScaleCalculated, circleScaleCalculated)];
+        [myTransparentGray setFill];
+        [circlePath fill];
+
+
+        //// Inner Circle Drawing
+        UIBezierPath* innerCirclePath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(136, 136, 240, 240)];
+        [myTransparentWhite setFill];
+        [innerCirclePath fill];
 
 
 

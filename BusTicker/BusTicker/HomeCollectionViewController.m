@@ -11,6 +11,10 @@
 #import "AppHelper.h"
 #import "StyleKit+Additions.h"
 
+#import "PulsingView.h"
+
+#pragma mark -
+
 #define kTagBusStopLabel 1
 #define kTagRouteLabel 2
 #define kTagMainImageView 3
@@ -23,16 +27,31 @@
 #define kTagDirectionsbutton 10
 #define kTagDistanceLabel 11
 
+#define kTagPulsingView 12
+
+#pragma mark -
+
 @interface HomeCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
+#pragma mark -
+
 @implementation HomeCollectionViewController
 
 #pragma mark - View Lifecycle
 #pragma mark -
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    LOG_INSET(@"collection view inset", self.collectionView.contentInset);
+    
+    [self.collectionView setContentInset:UIEdgeInsetsZero];
+//    [self.collectionView sets]
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -69,6 +88,27 @@
     // TODO: implement
 }
 
+#pragma mark - Animations
+#pragma mark -
+
+- (void)animatePulsingView:(PulsingView *)pulsingView {
+    [pulsingView stop];
+    
+    pulsingView.innerColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.25];
+    pulsingView.outerColor = [UIColor colorWithRed:0.0392 green:0.3216 blue:0.5922 alpha:0.5];
+    
+    pulsingView.innerDiameter = CGRectGetWidth(pulsingView.frame) * 0.75;
+    pulsingView.outerDiameter = CGRectGetWidth(pulsingView.frame);
+    
+    pulsingView.innerDuration = 6;
+    pulsingView.innerDelay = 1;
+    
+    pulsingView.outerDuration = 5;
+    pulsingView.outerDelay = 2;
+    
+    [pulsingView start];
+}
+
 #pragma mark - UICollectionViewDataSource
 #pragma mark -
 
@@ -77,7 +117,6 @@
     return 5;
 }
 
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     // TODO: implement
     
@@ -95,6 +134,12 @@
     UIButton *pickerButton = [AppHelper buttonWithTag:kTagPickerButton inView:cell];
     UIButton *starButton = [AppHelper buttonWithTag:kTagStarButton inView:cell];
     UIButton *directionsButton = [AppHelper buttonWithTag:kTagDirectionsbutton inView:cell];
+    
+    UIImage *mainImage = [StyleKit drawEstimateCircleImageWithCircleScale:1.0f imageSize:mainImageView.frame.size];
+    mainImageView.image = mainImage;
+    
+    PulsingView *pulsingView = (PulsingView *)[cell viewWithTag:kTagPulsingView];
+    [self animatePulsingView:pulsingView];
     
     UIImage *pickerImage = [StyleKit drawImage:DrawingPicker size:CGSizeMake(50, 50)];
     [pickerButton setImage:pickerImage forState:UIControlStateNormal];
@@ -134,11 +179,11 @@
 #pragma mark -
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGSize size = collectionView.frame.size;
-    
-    LOG_SIZE(@"cell", size);
-    
     return collectionView.frame.size;
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsZero;
 }
 
 @end
