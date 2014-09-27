@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1AO-C8-pXL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uo2-g9-HSj">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -35,13 +35,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Stop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-Zc-A7U" userLabel="Bus Stop Label">
-                                                    <rect key="frame" x="10" y="10" width="71.5" height="20.5"/>
+                                                    <rect key="frame" x="10" y="10" width="72" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-2D-60F" userLabel="Route Label">
-                                                    <rect key="frame" x="264" y="10" width="46" height="20.5"/>
+                                                    <rect key="frame" x="264" y="10" width="46" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -53,21 +53,47 @@
                                                         <constraint firstAttribute="width" constant="300" id="RMR-Hr-jM4"/>
                                                         <constraint firstAttribute="height" constant="300" id="kDI-Iu-OB8"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="innerDiameter">
+                                                            <real key="value" value="250"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="innerColor">
+                                                            <color key="value" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="outerColor">
+                                                            <color key="value" white="0.33333333329999998" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="outerDiameter">
+                                                            <real key="value" value="300"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="innerDuration">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="outerDuration">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="innerDelay">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="outerDelay">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93J-ia-GCT" userLabel="Main Number Label">
-                                                    <rect key="frame" x="125.5" y="128" width="69" height="148"/>
+                                                    <rect key="frame" x="125" y="128" width="69" height="148"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="124"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6o-eo-gXC" userLabel="Minutes Label">
-                                                    <rect key="frame" x="127.5" y="286" width="61" height="20.5"/>
+                                                    <rect key="frame" x="127" y="286" width="61" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-xA-eNf" userLabel="Directions View">
-                                                    <rect key="frame" x="252" y="411.5" width="58" height="72.5"/>
+                                                    <rect key="frame" x="252" y="411" width="58" height="73"/>
                                                     <subviews>
                                                         <button opaque="NO" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWt-hn-zLS" userLabel="Directions Button">
                                                             <rect key="frame" x="4" y="4" width="50" height="50"/>
@@ -80,7 +106,7 @@
                                                             </state>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="61" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpR-GE-2T5" userLabel="Distance Label">
-                                                            <rect key="frame" x="18" y="54" width="22" height="14.5"/>
+                                                            <rect key="frame" x="18" y="54" width="22" height="15"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -107,13 +133,13 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="31" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bus stops" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i1-mr-1IB" userLabel="Quick Select Label">
-                                                    <rect key="frame" x="133" y="409" width="55" height="14.5"/>
+                                                    <rect key="frame" x="133" y="409" width="55" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSI-Nc-EYa" userLabel="Favorite View">
-                                                    <rect key="frame" x="10" y="408.5" width="58" height="75.5"/>
+                                                    <rect key="frame" x="10" y="408" width="58" height="76"/>
                                                     <subviews>
                                                         <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoZ-Yf-dqv" userLabel="Favorite Button">
                                                             <rect key="frame" x="4" y="4" width="50" height="50"/>
@@ -126,7 +152,7 @@
                                                             </state>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="41" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="favorite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-BW-H71" userLabel="Favorite Label">
-                                                            <rect key="frame" x="8" y="57" width="41.5" height="14.5"/>
+                                                            <rect key="frame" x="8" y="57" width="42" height="15"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -143,7 +169,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-Fs-Erm" userLabel="Weather View">
-                                                    <rect key="frame" x="131" y="427.5" width="58" height="72.5"/>
+                                                    <rect key="frame" x="131" y="427" width="58" height="73"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" tag="50" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hE-Si-MB5">
                                                             <rect key="frame" x="4" y="4" width="50" height="50"/>
@@ -153,7 +179,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="51" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilo-i7-GNX" userLabel="Temperature Label">
-                                                            <rect key="frame" x="15" y="54" width="28.5" height="14.5"/>
+                                                            <rect key="frame" x="15" y="54" width="29" height="15"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -205,10 +231,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="BFe-Rt-ilx" secondAttribute="trailing" id="ZNr-ak-pzn"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BFe-Rt-ilx" secondAttribute="bottom" id="g6D-9C-NeF"/>
-                            <constraint firstItem="BFe-Rt-ilx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="lLC-4H-5Zq"/>
-                            <constraint firstItem="BFe-Rt-ilx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="wWi-hl-60o"/>
+                            <constraint firstItem="BFe-Rt-ilx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="J2F-aC-jKy"/>
+                            <constraint firstItem="BFe-Rt-ilx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="R5G-D6-NlG"/>
+                            <constraint firstAttribute="trailing" secondItem="BFe-Rt-ilx" secondAttribute="trailing" id="a8A-XB-pRV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BFe-Rt-ilx" secondAttribute="bottom" id="f6Q-h6-hyh"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -219,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="136"/>
+            <point key="canvasLocation" x="1203" y="136"/>
         </scene>
         <!--Bus Stop Picker View Controller-->
         <scene sceneID="g18-ym-1Bk">
@@ -253,7 +279,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Stop and Route" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-Gf-iZc" userLabel="Bus Stop/Route Label">
-                                                    <rect key="frame" x="10" y="11.5" width="155.5" height="20.5"/>
+                                                    <rect key="frame" x="10" y="12" width="156" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -295,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35Y-FS-ysK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="136"/>
+            <point key="canvasLocation" x="1596" y="136"/>
         </scene>
         <!--Quick Select View Controller-->
         <scene sceneID="7vn-ac-bGX">
@@ -327,7 +353,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Stop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCP-LO-STh" userLabel="Bus Stop Label">
-                                                    <rect key="frame" x="39" y="10" width="73" height="20.5"/>
+                                                    <rect key="frame" x="39" y="10" width="73" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -340,7 +366,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUG-zT-RCE" userLabel="Distance Label">
-                                                    <rect key="frame" x="61" y="120.5" width="28.5" height="19.5"/>
+                                                    <rect key="frame" x="61" y="121" width="29" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -372,29 +398,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcI-bS-jts" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1472" y="136"/>
+            <point key="canvasLocation" x="2004" y="136"/>
         </scene>
         <!--Base Navigation View Controller-->
-        <scene sceneID="Rbx-dc-xW1">
+        <scene sceneID="S8G-j3-9ww">
             <objects>
-                <navigationController storyboardIdentifier="MainNavVC" automaticallyAdjustsScrollViewInsets="NO" id="1AO-C8-pXL" customClass="BaseNavigationViewController" sceneMemberID="viewController">
+                <navigationController id="uo2-g9-HSj" customClass="BaseNavigationViewController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pMy-IF-gvu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q9i-Me-yC6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.38039219379425049" green="0.5058823823928833" blue="0.63137257099151611" alpha="1" colorSpace="deviceRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="uf9-bu-OU5"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="geG-RZ-fV8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZpK-Yd-34k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMd-Xx-zgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="136"/>
+            <point key="canvasLocation" x="783" y="136"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

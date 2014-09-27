@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
 		2610565E19CE7DF6007B243E /* PulsingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610565D19CE7DF6007B243E /* PulsingView.m */; };
 		2610565F19CE7DF6007B243E /* PulsingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610565D19CE7DF6007B243E /* PulsingView.m */; };
 		2610566219CE8C80007B243E /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2610566119CE8C80007B243E /* BaseNavigationViewController.m */; };
@@ -39,7 +38,8 @@
 		26BD772A19CDEA8400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
 		26BD772B19CDEA8400B00969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770A19CDE87400B00969 /* LaunchScreen.xib */; };
 		26BD772C19CDEA8400B00969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770819CDE87400B00969 /* Images.xcassets */; };
-		99E0B89A210D40CC987C2F12 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D538C17A24F79A725CE1D /* libPods.a */; };
+		6D8E3525E52D458EA6D9161D /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
+		9A622B4BDA9F44ADB5EB5EB7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D538C17A24F79A725CE1D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E0B89A210D40CC987C2F12 /* libPods.a in Frameworks */,
+				9A622B4BDA9F44ADB5EB5EB7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 				2645C3AE19CE377C003B2BD8 /* MapKit.framework in Frameworks */,
 				2645C3AF19CE377C003B2BD8 /* SystemConfiguration.framework in Frameworks */,
 				2645C3B019CE377C003B2BD8 /* UIKit.framework in Frameworks */,
-				1D5E2266EF1546ECA0778047 /* libPods-Staging.a in Frameworks */,
+				6D8E3525E52D458EA6D9161D /* libPods-Staging.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +379,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M%S\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
+			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
 		};
 		2669198819CDF31800404F9A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -392,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M%S\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
+			shellScript = "appBuild=`date \"+%Y.%m.%d.%H%M\"`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"    ";
 		};
 		26BD772219CDEA8400B00969 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
