@@ -40,6 +40,10 @@
     _outerDelay = 2;
 }
 
+- (void)prepareForInterfaceBuilder {
+    [self start];
+}
+
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     if (newSuperview) {
         [self rebuildLayers];

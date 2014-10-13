@@ -21,6 +21,10 @@
 		2645C3AE19CE377C003B2BD8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645C3AA19CE377C003B2BD8 /* MapKit.framework */; };
 		2645C3AF19CE377C003B2BD8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645C3AB19CE377C003B2BD8 /* SystemConfiguration.framework */; };
 		2645C3B019CE377C003B2BD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645C3AC19CE377C003B2BD8 /* UIKit.framework */; };
+		2656EFD119E9F04800D9128C /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2656EFD019E9F04800D9128C /* AppContext.m */; };
+		2656EFD219E9F04800D9128C /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2656EFD019E9F04800D9128C /* AppContext.m */; };
+		2656EFD719EB7A4900D9128C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2656EFD619EB7A4900D9128C /* BaseViewController.m */; };
+		2656EFD819EB7A4900D9128C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2656EFD619EB7A4900D9128C /* BaseViewController.m */; };
 		2669198C19CE098600404F9A /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198B19CE098600404F9A /* HomeCollectionViewController.m */; };
 		2669198D19CE098600404F9A /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198B19CE098600404F9A /* HomeCollectionViewController.m */; };
 		2669199019CE09B300404F9A /* BusStopPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669198F19CE09B300404F9A /* BusStopPickerViewController.m */; };
@@ -29,6 +33,8 @@
 		2669199519CE09C900404F9A /* QuickSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2669199319CE09C900404F9A /* QuickSelectViewController.m */; };
 		269C0B2D19E8806B001CF47B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 269C0B2C19E8806B001CF47B /* Default-568h@2x.png */; };
 		269C0B2E19E8806B001CF47B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 269C0B2C19E8806B001CF47B /* Default-568h@2x.png */; };
+		269C0B9219E9E589001CF47B /* AppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 269C0B9119E9E589001CF47B /* AppConfiguration.m */; };
+		269C0B9319E9E589001CF47B /* AppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 269C0B9119E9E589001CF47B /* AppConfiguration.m */; };
 		26BD76FE19CDE87400B00969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD76FD19CDE87400B00969 /* main.m */; };
 		26BD770119CDE87400B00969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD770019CDE87400B00969 /* AppDelegate.m */; };
 		26BD770719CDE87400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
@@ -69,6 +75,11 @@
 		2645C3AA19CE377C003B2BD8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2645C3AB19CE377C003B2BD8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2645C3AC19CE377C003B2BD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2656EFCE19E9ECF700D9128C /* Milwaukee Downtown.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Milwaukee Downtown.gpx"; sourceTree = "<group>"; };
+		2656EFCF19E9F04800D9128C /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContext.h; sourceTree = "<group>"; };
+		2656EFD019E9F04800D9128C /* AppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppContext.m; sourceTree = "<group>"; };
+		2656EFD519EB7A4900D9128C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2656EFD619EB7A4900D9128C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		265D538C17A24F79A725CE1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2669198A19CE098600404F9A /* HomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
 		2669198B19CE098600404F9A /* HomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
@@ -77,6 +88,8 @@
 		2669199219CE09C900404F9A /* QuickSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSelectViewController.h; sourceTree = "<group>"; };
 		2669199319CE09C900404F9A /* QuickSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSelectViewController.m; sourceTree = "<group>"; };
 		269C0B2C19E8806B001CF47B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		269C0B9019E9E589001CF47B /* AppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfiguration.h; sourceTree = "<group>"; };
+		269C0B9119E9E589001CF47B /* AppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfiguration.m; sourceTree = "<group>"; };
 		26BD76F819CDE87400B00969 /* BusTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BD76FC19CDE87400B00969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BD76FD19CDE87400B00969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -146,11 +159,21 @@
 			name = StyleKit;
 			sourceTree = "<group>";
 		};
+		2656EFCD19E9ECE700D9128C /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				2656EFCE19E9ECF700D9128C /* Milwaukee Downtown.gpx */,
+			);
+			name = Locations;
+			sourceTree = "<group>";
+		};
 		2669198919CE095D00404F9A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2610566019CE8C80007B243E /* BaseNavigationViewController.h */,
 				2610566119CE8C80007B243E /* BaseNavigationViewController.m */,
+				2656EFD519EB7A4900D9128C /* BaseViewController.h */,
+				2656EFD619EB7A4900D9128C /* BaseViewController.m */,
 				2669198A19CE098600404F9A /* HomeCollectionViewController.h */,
 				2669198B19CE098600404F9A /* HomeCollectionViewController.m */,
 				2669198E19CE09B300404F9A /* BusStopPickerViewController.h */,
@@ -159,6 +182,19 @@
 				2669199319CE09C900404F9A /* QuickSelectViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		269C0B8F19E9E574001CF47B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				26302DCC19CE36750033E826 /* AppHelper.h */,
+				26302DCD19CE36750033E826 /* AppHelper.m */,
+				269C0B9019E9E589001CF47B /* AppConfiguration.h */,
+				269C0B9119E9E589001CF47B /* AppConfiguration.m */,
+				2656EFCF19E9F04800D9128C /* AppContext.h */,
+				2656EFD019E9F04800D9128C /* AppContext.m */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 		26BD76EF19CDE87400B00969 = {
@@ -186,13 +222,12 @@
 		26BD76FA19CDE87400B00969 /* BusTicker */ = {
 			isa = PBXGroup;
 			children = (
+				269C0B8F19E9E574001CF47B /* App */,
 				26302DC319CE2B530033E826 /* StyleKit */,
 				2669198919CE095D00404F9A /* View Controllers */,
 				2610565B19CE7DCB007B243E /* Views */,
 				26BD76FF19CDE87400B00969 /* AppDelegate.h */,
 				26BD770019CDE87400B00969 /* AppDelegate.m */,
-				26302DCC19CE36750033E826 /* AppHelper.h */,
-				26302DCD19CE36750033E826 /* AppHelper.m */,
 				26BD770519CDE87400B00969 /* Main.storyboard */,
 				26BD770819CDE87400B00969 /* Images.xcassets */,
 				26BD770A19CDE87400B00969 /* LaunchScreen.xib */,
@@ -204,6 +239,7 @@
 		26BD76FB19CDE87400B00969 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2656EFCD19E9ECE700D9128C /* Locations */,
 				269C0B2C19E8806B001CF47B /* Default-568h@2x.png */,
 				26BD773319CDEC2F00B00969 /* Staging.plist */,
 				26BD76FC19CDE87400B00969 /* Info.plist */,
@@ -472,11 +508,14 @@
 				26BD770119CDE87400B00969 /* AppDelegate.m in Sources */,
 				2669199419CE09C900404F9A /* QuickSelectViewController.m in Sources */,
 				2669199019CE09B300404F9A /* BusStopPickerViewController.m in Sources */,
+				2656EFD119E9F04800D9128C /* AppContext.m in Sources */,
 				26BD76FE19CDE87400B00969 /* main.m in Sources */,
 				26302DC619CE2B600033E826 /* StyleKit.m in Sources */,
 				2669198C19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
+				2656EFD719EB7A4900D9128C /* BaseViewController.m in Sources */,
 				2610565E19CE7DF6007B243E /* PulsingView.m in Sources */,
 				26302DCE19CE36750033E826 /* AppHelper.m in Sources */,
+				269C0B9219E9E589001CF47B /* AppConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,11 +536,14 @@
 				26BD772519CDEA8400B00969 /* AppDelegate.m in Sources */,
 				2669199519CE09C900404F9A /* QuickSelectViewController.m in Sources */,
 				2669199119CE09B300404F9A /* BusStopPickerViewController.m in Sources */,
+				2656EFD219E9F04800D9128C /* AppContext.m in Sources */,
 				26BD772619CDEA8400B00969 /* main.m in Sources */,
 				26302DC719CE2B600033E826 /* StyleKit.m in Sources */,
 				2669198D19CE098600404F9A /* HomeCollectionViewController.m in Sources */,
+				2656EFD819EB7A4900D9128C /* BaseViewController.m in Sources */,
 				2610565F19CE7DF6007B243E /* PulsingView.m in Sources */,
 				26302DCF19CE36750033E826 /* AppHelper.m in Sources */,
+				269C0B9319E9E589001CF47B /* AppConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +658,7 @@
 			baseConfigurationReference = CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BusTicker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -628,6 +671,7 @@
 			baseConfigurationReference = CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BusTicker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -674,6 +718,7 @@
 			baseConfigurationReference = FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -686,6 +731,7 @@
 			baseConfigurationReference = FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

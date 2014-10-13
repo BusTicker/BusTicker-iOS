@@ -36,7 +36,16 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>BusTickerSettings</key>
+	<dict>
+		<key>DefaultLatitude</key>
+		<real>43.0489121</real>
+		<key>DefaultLongitude</key>
+		<real>-87.9040475</real>
+		<key>DefaultRadius</key>
+		<integer>1000</integer>
+	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This app will use your location to show you nearby bus stops.</string>
+	<string>This app will use your location to show nearby bus stops.</string>
 </dict>
 </plist>

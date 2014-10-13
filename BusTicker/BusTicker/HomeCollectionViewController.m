@@ -8,9 +8,13 @@
 
 #import "HomeCollectionViewController.h"
 
-#import "AppHelper.h"
-#import "StyleKit+Additions.h"
+#import <CoreLocation/CoreLocation.h>
 
+#import "AppHelper.h"
+#import "AppConfiguration.h"
+#import "AppContext.h"
+
+#import "StyleKit+Additions.h"
 #import "PulsingView.h"
 
 #pragma mark -
@@ -22,8 +26,8 @@
 #define kTagEstimateLabel 21
 #define kTagMinutesLabel 22
 
-#define kTagPickerButton 30
-#define kTagPickerLabel 31
+#define kTagQuickSelectButton 30
+#define kTagQuickSelectLabel 31
 
 #define kTagFavoriteButton 40
 #define kTagFavoriteLabel 41
@@ -51,21 +55,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    LOG_INSET(@"collection view inset", self.collectionView.contentInset);
-    
-    [self.collectionView setContentInset:UIEdgeInsetsZero];
-//    [self.collectionView sets]
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    LOG_FRAME(@"home view", self.view.frame);
-    LOG_FRAME(@"collection view", self.collectionView.frame);
-    
     UIButton *busStopsButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [busStopsButton addTarget:self action:@selector(busStopsButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [busStopsButton addTarget:self action:@selector(busStopsPickerButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     busStopsButton.frame = CGRectMake(0, 0, 30, 30);
     [busStopsButton setImage:[StyleKit drawImage:DrawingBusStop size:busStopsButton.frame.size] forState:UIControlStateNormal];
     UIBarButtonItem *busStopsBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:busStopsButton];
@@ -76,24 +72,20 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-//    [self.collectionView reloadData];
-    
-    self.collectionView.frame = self.view.bounds;
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
+    //self.collectionView.frame = self.view.bounds;
+    [[AppContext defaultInstance] monitorSignificantLocationChanges];
 }
 
 #pragma mark - User Action
 #pragma mark -
 
-- (void)busStopsButtonTapped:(UIButton *)button {
+- (void)busStopsPickerButtonTapped:(UIButton *)button {
     // TODO: implement
     DebugLog(@"%@", NSStringFromSelector(_cmd));
+    [self performSegueWithIdentifier:@"ShowBusStopPicker" sender:self];
 }
 
-- (void)pickerButtonTapped:(UIButton *)button {
+- (void)quickSelectButtonTapped:(UIButton *)button {
     // TODO: implement
     DebugLog(@"%@", NSStringFromSelector(_cmd));
 }
@@ -108,6 +100,11 @@
     DebugLog(@"%@", NSStringFromSelector(_cmd));
     // TODO: implement
 }
+
+#pragma mark - Private
+#pragma mark -
+
+// nothing
 
 #pragma mark - Animations
 #pragma mark -
@@ -158,7 +155,7 @@
     
     UIImageView *forecastImageView = [AppHelper imageViewWithTag:kTagForecastImageView inView:cell];
     
-    UIButton *pickerButton = [AppHelper buttonWithTag:kTagPickerButton inView:cell];
+    UIButton *quickSelectButton = [AppHelper buttonWithTag:kTagQuickSelectButton inView:cell];
     UIButton *starButton = [AppHelper buttonWithTag:kTagFavoriteButton inView:cell];
     UIButton *directionsButton = [AppHelper buttonWithTag:kTagDirectionsButton inView:cell];
     
@@ -169,11 +166,11 @@
     [self animatePulsingView:pulsingView atIndexPath:indexPath];
     
     UIImage *pickerImage = [StyleKit drawImage:DrawingPicker size:CGSizeMake(50, 50)];
-    [pickerButton setImage:pickerImage forState:UIControlStateNormal];
-    [pickerButton setTitle:nil forState:UIControlStateNormal];
+    [quickSelectButton setImage:pickerImage forState:UIControlStateNormal];
+    [quickSelectButton setTitle:nil forState:UIControlStateNormal];
     
-    [pickerButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
-    [pickerButton addTarget:self action:@selector(pickerButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [quickSelectButton removeTarget:nil action:NULL forControlEvents:UIControlEventAllEvents];
+    [quickSelectButton addTarget:self action:@selector(quickSelectButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 
     UIImage *starOffImage = [StyleKit drawImage:DrawingStarOff size:CGSizeMake(50, 50)];
     UIImage *starOnImage = [StyleKit drawImage:DrawingStarOn size:CGSizeMake(50, 50)];
