@@ -14,6 +14,8 @@
 #import "AppConfiguration.h"
 #import "AppContext.h"
 
+#import "Backend.h"
+
 #import "StyleKit+Additions.h"
 #import "PulsingView.h"
 
@@ -55,6 +57,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    StopsRequest *stopsRequest = [[StopsRequest alloc] init];
+//    stopsRequest.coordinate = CLLocationCoordinate2DMake(43.053278377347, -87.903306511242);
+//    stopsRequest.radius = 0.75;
+//    stopsRequest.page = 1;
+//    stopsRequest.pageSize = 3;
+//    
+//    [Backend fetchStops:stopsRequest withCompletionBlock:^(NSArray *stops, NSError *error) {
+//        DebugLog(@"stops: %@", stops);
+//    }];
+    
+//    PredictionsRequest *predictionsRequest = [[PredictionsRequest alloc] init];
+//    predictionsRequest.route = @"GRE";
+//    predictionsRequest.stop = @"1417";
+//    
+//    [Backend fetchPredictions:predictionsRequest withCompletionBlock:^(NSArray *predictions, NSError *error) {
+//        DebugLog(@"predictions: %@", predictions);
+//    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

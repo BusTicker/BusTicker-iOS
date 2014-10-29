@@ -13,5 +13,6 @@
 
 + (CLLocationCoordinate2D)defaultLocationCoordinate;
 + (CLLocationDistance)defaultRadius;
++ (NSString *)baseURL;
 
 @end

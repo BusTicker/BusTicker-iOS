@@ -27,4 +27,8 @@
     return defaultRadius ? defaultRadius : 1000.0;
 }
 
++ (NSString *)baseURL {
+    return [self busTickerSettings][@"BaseURL"];
+}
+
 @end
