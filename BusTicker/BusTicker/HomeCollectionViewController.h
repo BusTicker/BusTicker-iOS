@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeCollectionViewController : UIViewController
+#import "BaseViewController.h"
+
+@interface HomeCollectionViewController : BaseViewController
 
 @end

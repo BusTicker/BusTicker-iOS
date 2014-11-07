@@ -10,6 +10,12 @@
 
 #import <MapKit/MapKit.h>
 
+#import "AppHelper.h"
+#import "AppConfiguration.h"
+#import "AppContext.h"
+
+#import "BaseViewController.h"
+
 @interface BusStopPickerViewController () <MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -17,7 +23,63 @@
 
 @end
 
-@implementation BusStopPickerViewController
+@implementation BusStopPickerViewController {
+    BOOL _isMapPositioned;
+}
+
+#pragma mark - View Lifecycle
+#pragma mark -
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.title = @"Stops";
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (!_isMapPositioned) {
+        [self repositionMap];
+        _isMapPositioned = TRUE;
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // TODO: load the bus stops for the visible region
+    
+    // Use MKMapRectContainsPoint to determine if a point should still be
+    // available as an annotation view (add/remove)
+    
+    // See MKGeometry.h for more useful functions
+    // valueWithMKCoordinate
+}
+
+#pragma mark - Private
+#pragma mark -
+
+- (void)repositionMap {
+    CLLocationDistance radius = [AppConfiguration defaultRadius];
+    CLLocationCoordinate2D coordinate = [[AppContext defaultInstance] currentCoordindate];
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate, radius, radius);
+    
+    [self.mapView setRegion:region animated:FALSE];
+}
+
+- (CLLocationDistance)radius {
+    MKCoordinateRegion region = self.mapView.region;
+    CLLocationCoordinate2D center = region.center;
+    
+    CLLocation *boundaryLocation = [[CLLocation alloc] initWithLatitude:(center.latitude + region.span.latitudeDelta) longitude:center.longitude];
+    CLLocation *centerLocation = [[CLLocation alloc] initWithLatitude:center.latitude longitude:center.longitude];
+    
+    CLLocationDistance distance = [centerLocation distanceFromLocation:boundaryLocation];
+    CLLocationDistance radius = distance / 2;
+    
+    return radius;
+}
 
 #pragma mark - MKMapViewDelegate
 #pragma mark -

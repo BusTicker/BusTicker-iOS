@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "Stop.h"
+
 @interface BusTickerTests : XCTestCase
 
 @end
@@ -25,16 +27,39 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testStopForNSCoding {
+    // This is an example of a performance test case.
+    
+    Stop *stop = [[Stop alloc] init];
+    stop.direction = @"WEST";
+    stop.coordinate = CLLocationCoordinate2DMake(43.049462579534, -87.898241822089);
+    stop.name = @"HUMBOLDT + LYON";
+    stop.routeId = @"10";
+    stop.stopId = @"464";
+    
+    Stop *copy = stop.copy;
+    
+    XCTAssertTrue([stop.direction isEqualToString:copy.direction]);
+    XCTAssertTrue(stop.coordinate.latitude == copy.coordinate.latitude);
+    XCTAssertTrue(stop.coordinate.longitude == copy.coordinate.longitude);
+    XCTAssertTrue([stop.name isEqualToString:copy.name]);
+    XCTAssertTrue([stop.routeId isEqualToString:copy.routeId]);
+    XCTAssertTrue([stop.stopId isEqualToString:copy.stopId]);
 }
 
-- (void)testPerformanceExample {
+- (void)testStopForEquals {
     // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    
+    Stop *stop = [[Stop alloc] init];
+    stop.direction = @"WEST";
+    stop.coordinate = CLLocationCoordinate2DMake(43.049462579534, -87.898241822089);
+    stop.name = @"HUMBOLDT + LYON";
+    stop.routeId = @"10";
+    stop.stopId = @"464";
+    
+    Stop *copy = stop.copy;
+    
+    XCTAssertTrue([stop isEqual:copy]);
 }
 
 @end
