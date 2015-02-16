@@ -54,6 +54,12 @@
 		26BD772A19CDEA8400B00969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770519CDE87400B00969 /* Main.storyboard */; };
 		26BD772B19CDEA8400B00969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770A19CDE87400B00969 /* LaunchScreen.xib */; };
 		26BD772C19CDEA8400B00969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BD770819CDE87400B00969 /* Images.xcassets */; };
+		26FDC1621A0D2BF70012CAE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FDC1611A0D2BF70012CAE5 /* AppDelegate.m */; };
+		26FDC1641A0D2BF70012CAE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FDC1631A0D2BF70012CAE5 /* main.m */; };
+		26FDC1671A0D2BF70012CAE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FDC1661A0D2BF70012CAE5 /* ViewController.m */; };
+		26FDC1691A0D2BF70012CAE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26FDC1681A0D2BF70012CAE5 /* Images.xcassets */; };
+		26FDC16C1A0D2BF70012CAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FDC16A1A0D2BF70012CAE5 /* Main.storyboard */; };
+		26FDC1781A0D2BF70012CAE5 /* BusTickerForMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FDC1771A0D2BF70012CAE5 /* BusTickerForMacTests.m */; };
 		6D8E3525E52D458EA6D9161D /* libPods-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */; };
 		9A622B4BDA9F44ADB5EB5EB7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D538C17A24F79A725CE1D /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -65,6 +71,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 26BD76F719CDE87400B00969;
 			remoteInfo = BusTicker;
+		};
+		26FDC1721A0D2BF70012CAE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26BD76F019CDE87400B00969 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26FDC15B1A0D2BF70012CAE5;
+			remoteInfo = BusTickerForMac;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -119,6 +132,18 @@
 		26BD771719CDE87400B00969 /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
 		26BD773119CDEA8400B00969 /* Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BD773319CDEC2F00B00969 /* Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Staging.plist; sourceTree = "<group>"; };
+		26FDC15C1A0D2BF70012CAE5 /* BusTickerForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTickerForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FDC15F1A0D2BF70012CAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26FDC1601A0D2BF70012CAE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		26FDC1611A0D2BF70012CAE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		26FDC1631A0D2BF70012CAE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26FDC1651A0D2BF70012CAE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		26FDC1661A0D2BF70012CAE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		26FDC1681A0D2BF70012CAE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		26FDC16B1A0D2BF70012CAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26FDC1711A0D2BF70012CAE5 /* BusTickerForMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusTickerForMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FDC1761A0D2BF70012CAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26FDC1771A0D2BF70012CAE5 /* BusTickerForMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerForMacTests.m; sourceTree = "<group>"; };
 		CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Staging.xcconfig"; path = "Pods/Pods-Staging.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +174,20 @@
 				2645C3AF19CE377C003B2BD8 /* SystemConfiguration.framework in Frameworks */,
 				2645C3B019CE377C003B2BD8 /* UIKit.framework in Frameworks */,
 				6D8E3525E52D458EA6D9161D /* libPods-Staging.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FDC1591A0D2BF70012CAE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FDC16E1A0D2BF70012CAE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +272,8 @@
 			children = (
 				26BD76FA19CDE87400B00969 /* BusTicker */,
 				26BD771419CDE87400B00969 /* BusTickerTests */,
+				26FDC15D1A0D2BF70012CAE5 /* BusTickerForMac */,
+				26FDC1741A0D2BF70012CAE5 /* BusTickerForMacTests */,
 				26BD76F919CDE87400B00969 /* Products */,
 				CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */,
 				FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */,
@@ -246,6 +287,8 @@
 				26BD76F819CDE87400B00969 /* BusTicker.app */,
 				26BD771119CDE87400B00969 /* BusTickerTests.xctest */,
 				26BD773119CDEA8400B00969 /* Staging.app */,
+				26FDC15C1A0D2BF70012CAE5 /* BusTickerForMac.app */,
+				26FDC1711A0D2BF70012CAE5 /* BusTickerForMacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,6 +336,46 @@
 			isa = PBXGroup;
 			children = (
 				26BD771619CDE87400B00969 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26FDC15D1A0D2BF70012CAE5 /* BusTickerForMac */ = {
+			isa = PBXGroup;
+			children = (
+				26FDC1601A0D2BF70012CAE5 /* AppDelegate.h */,
+				26FDC1611A0D2BF70012CAE5 /* AppDelegate.m */,
+				26FDC1651A0D2BF70012CAE5 /* ViewController.h */,
+				26FDC1661A0D2BF70012CAE5 /* ViewController.m */,
+				26FDC1681A0D2BF70012CAE5 /* Images.xcassets */,
+				26FDC16A1A0D2BF70012CAE5 /* Main.storyboard */,
+				26FDC15E1A0D2BF70012CAE5 /* Supporting Files */,
+			);
+			path = BusTickerForMac;
+			sourceTree = "<group>";
+		};
+		26FDC15E1A0D2BF70012CAE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26FDC15F1A0D2BF70012CAE5 /* Info.plist */,
+				26FDC1631A0D2BF70012CAE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26FDC1741A0D2BF70012CAE5 /* BusTickerForMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				26FDC1771A0D2BF70012CAE5 /* BusTickerForMacTests.m */,
+				26FDC1751A0D2BF70012CAE5 /* Supporting Files */,
+			);
+			path = BusTickerForMacTests;
+			sourceTree = "<group>";
+		};
+		26FDC1751A0D2BF70012CAE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26FDC1761A0D2BF70012CAE5 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -371,6 +454,41 @@
 			productReference = 26BD773119CDEA8400B00969 /* Staging.app */;
 			productType = "com.apple.product-type.application";
 		};
+		26FDC15B1A0D2BF70012CAE5 /* BusTickerForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FDC17D1A0D2BF70012CAE5 /* Build configuration list for PBXNativeTarget "BusTickerForMac" */;
+			buildPhases = (
+				26FDC1581A0D2BF70012CAE5 /* Sources */,
+				26FDC1591A0D2BF70012CAE5 /* Frameworks */,
+				26FDC15A1A0D2BF70012CAE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusTickerForMac;
+			productName = BusTickerForMac;
+			productReference = 26FDC15C1A0D2BF70012CAE5 /* BusTickerForMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26FDC1701A0D2BF70012CAE5 /* BusTickerForMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FDC17E1A0D2BF70012CAE5 /* Build configuration list for PBXNativeTarget "BusTickerForMacTests" */;
+			buildPhases = (
+				26FDC16D1A0D2BF70012CAE5 /* Sources */,
+				26FDC16E1A0D2BF70012CAE5 /* Frameworks */,
+				26FDC16F1A0D2BF70012CAE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26FDC1731A0D2BF70012CAE5 /* PBXTargetDependency */,
+			);
+			name = BusTickerForMacTests;
+			productName = BusTickerForMacTests;
+			productReference = 26FDC1711A0D2BF70012CAE5 /* BusTickerForMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -386,6 +504,13 @@
 					26BD771019CDE87400B00969 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 26BD76F719CDE87400B00969;
+					};
+					26FDC15B1A0D2BF70012CAE5 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					26FDC1701A0D2BF70012CAE5 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 26FDC15B1A0D2BF70012CAE5;
 					};
 				};
 			};
@@ -405,6 +530,8 @@
 				26BD76F719CDE87400B00969 /* BusTicker */,
 				26BD772119CDEA8400B00969 /* Staging */,
 				26BD771019CDE87400B00969 /* BusTickerTests */,
+				26FDC15B1A0D2BF70012CAE5 /* BusTickerForMac */,
+				26FDC1701A0D2BF70012CAE5 /* BusTickerForMacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -436,6 +563,22 @@
 				269C0B2E19E8806B001CF47B /* Default-568h@2x.png in Resources */,
 				26BD772B19CDEA8400B00969 /* LaunchScreen.xib in Resources */,
 				26BD772C19CDEA8400B00969 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FDC15A1A0D2BF70012CAE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FDC1691A0D2BF70012CAE5 /* Images.xcassets in Resources */,
+				26FDC16C1A0D2BF70012CAE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FDC16F1A0D2BF70012CAE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +730,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26FDC1581A0D2BF70012CAE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FDC1671A0D2BF70012CAE5 /* ViewController.m in Sources */,
+				26FDC1641A0D2BF70012CAE5 /* main.m in Sources */,
+				26FDC1621A0D2BF70012CAE5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FDC16D1A0D2BF70012CAE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FDC1781A0D2BF70012CAE5 /* BusTickerForMacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -594,6 +755,11 @@
 			isa = PBXTargetDependency;
 			target = 26BD76F719CDE87400B00969 /* BusTicker */;
 			targetProxy = 26BD771219CDE87400B00969 /* PBXContainerItemProxy */;
+		};
+		26FDC1731A0D2BF70012CAE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26FDC15B1A0D2BF70012CAE5 /* BusTickerForMac */;
+			targetProxy = 26FDC1721A0D2BF70012CAE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -612,6 +778,14 @@
 				26BD770B19CDE87400B00969 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		26FDC16A1A0D2BF70012CAE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26FDC16B1A0D2BF70012CAE5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -779,6 +953,80 @@
 			};
 			name = Release;
 		};
+		26FDC1791A0D2BF70012CAE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BusTickerForMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		26FDC17A1A0D2BF70012CAE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = BusTickerForMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		26FDC17B1A0D2BF70012CAE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BusTickerForMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTickerForMac.app/Contents/MacOS/BusTickerForMac";
+			};
+			name = Debug;
+		};
+		26FDC17C1A0D2BF70012CAE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BusTickerForMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTickerForMac.app/Contents/MacOS/BusTickerForMac";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -817,6 +1065,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		26FDC17D1A0D2BF70012CAE5 /* Build configuration list for PBXNativeTarget "BusTickerForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FDC1791A0D2BF70012CAE5 /* Debug */,
+				26FDC17A1A0D2BF70012CAE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		26FDC17E1A0D2BF70012CAE5 /* Build configuration list for PBXNativeTarget "BusTickerForMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FDC17B1A0D2BF70012CAE5 /* Debug */,
+				26FDC17C1A0D2BF70012CAE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

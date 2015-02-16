@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BusTickerForMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
 		<key>Staging.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>26BD772119CDEA8400B00969</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26FDC15B1A0D2BF70012CAE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26FDC1701A0D2BF70012CAE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
