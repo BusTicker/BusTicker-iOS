@@ -1,65 +1,10 @@
 PODS:
-  - AFNetworking (2.4.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-    - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.4.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.4.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.4.1)
-  - AFNetworking/Security (2.4.1)
-  - AFNetworking/Serialization (2.4.1)
-  - AFNetworking/UIKit (2.4.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-  - BlocksKit (2.2.5):
-    - BlocksKit/All
-  - BlocksKit/All (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-    - BlocksKit/MessageUI
-    - BlocksKit/UIKit
-  - BlocksKit/Core (2.2.5)
-  - BlocksKit/DynamicDelegate (2.2.5)
-  - BlocksKit/MessageUI (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-  - BlocksKit/UIKit (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-  - Bolts (1.1.2)
-  - Facebook-iOS-SDK (3.18.0):
-    - Bolts
-  - Foursquare-API-v2 (1.4.5)
   - JTSReachability (1.1.0)
-  - Parse-iOS-SDK (1.2.21):
-    - Bolts
-    - Facebook-iOS-SDK (~> 3.7)
-  - PebbleKit (2.4)
-  - Reveal-iOS-SDK (1.0.5)
-  - SVPulsingAnnotationView (0.3.0)
-  - TTTAttributedLabel (1.10.1)
-  - UIView-Autolayout (0.2.0)
+  - UIView-Autolayout (0.2.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.4)
-  - BlocksKit (~> 2.2.0)
-  - Facebook-iOS-SDK (~> 3.0)
-  - Foursquare-API-v2 (~> 1.4)
-  - JTSReachability (from `http://github.com/brennanMKE/JTSReachability.git`, tag `1.1.0`)
-  - Parse-iOS-SDK (~> 1.2.19)
-  - PebbleKit (~> 2.4)
-  - Reveal-iOS-SDK
-  - SVPulsingAnnotationView (~> 0.3.0)
-  - TTTAttributedLabel (~> 1.10)
+  - JTSReachability (from `http://github.com/brennanMKE/JTSReachability.git`, tag
+    `1.1.0`)
   - UIView-Autolayout (~> 0.2.0)
 
 EXTERNAL SOURCES:
@@ -67,18 +12,13 @@ EXTERNAL SOURCES:
     :git: http://github.com/brennanMKE/JTSReachability.git
     :tag: 1.1.0
 
-SPEC CHECKSUMS:
-  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
-  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
-  Bolts: 2635e8698a630774689441047f3465d78c48d485
-  Facebook-iOS-SDK: fa12c51cc57bfb6f92e47793c9d4d2c65bc92741
-  Foursquare-API-v2: 31b9b6a9e68bc914bae4d3e20d65dc2826f4394d
-  JTSReachability: 68c4706858c216b24097242d9880ff52e4749dd3
-  Parse-iOS-SDK: 3781eeb56fa6b30d4feee97ee0d22595c07d6c70
-  PebbleKit: fff19519d19fa6e1be853f85ec70939282332655
-  Reveal-iOS-SDK: d4b2f4c20d5b823b7f8b88250fe1b71cecd424a7
-  SVPulsingAnnotationView: 92364bec02160f481d1b603afc904183d385c3e6
-  TTTAttributedLabel: 94bb04f1e005616002dd2cee0262a0082e533627
-  UIView-Autolayout: 7c05eb666738eba682f686c2da236578177e2ebb
+CHECKOUT OPTIONS:
+  JTSReachability:
+    :git: http://github.com/brennanMKE/JTSReachability.git
+    :tag: 1.1.0
 
-COCOAPODS: 0.33.1
+SPEC CHECKSUMS:
+  JTSReachability: 954168cdf3a9bb4a3396204a77ada40aa18b7126
+  UIView-Autolayout: 042510c499403f58620998278ddd60fa7b6cd4a7
+
+COCOAPODS: 0.39.0

@@ -72,14 +72,7 @@
     
     if ([CLLocationManager locationServicesEnabled]) {
         CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
-        if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-            // iOS 8+ support
-            isAuthorized = status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse;
-        }
-        else {
-            // legacy support (iOS 7)
-            isAuthorized = status == kCLAuthorizationStatusAuthorized;
-        }
+        isAuthorized = status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse;
     }
     
     return isAuthorized;

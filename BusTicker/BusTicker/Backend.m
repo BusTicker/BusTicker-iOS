@@ -10,7 +10,6 @@
 
 #import "AppHelper.h"
 #import "AppConfiguration.h"
-#import "AFNetworking.h"
 
 // Stops
 #define kParamLatitude @"lat"
@@ -26,6 +25,8 @@
 #define kTimeoutInterval 20
 
 @implementation Backend
+
+static NSURLSession *session;
 
 + (void)fetchStops:(StopsRequest *)request withCompletionBlock:(void (^)(NSArray *stops, NSError *error))completionBlock {
     if (!completionBlock) {
@@ -107,28 +108,60 @@
         return;
     }
     
-    AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
-    NSError *error;
-    NSMutableURLRequest *request = [requestSerializer requestWithMethod:@"GET" URLString:[url absoluteString] parameters:params error:&error];
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    request.timeoutInterval = kTimeoutInterval;
-    operation.responseSerializer = [AFJSONResponseSerializer serializer];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id response) {
-        if ([response isKindOfClass:[NSDictionary class]]) {
-            NSDictionary *dictionary = (NSDictionary *)response;
-            if ([dictionary[@"success"] boolValue]) {
-                completionBlock(dictionary[@"data"], nil);
-            }
-            else {
-                NSDictionary *userInfo = @{NSLocalizedDescriptionKey : dictionary[@"message"]};
-                NSError *error = [NSError errorWithDomain:@"Backend" code:101 userInfo:userInfo];
+    url = [self appendQueryParameters:params toURL:url];
+    
+    DebugLog(@"url: %@", url);
+    
+    if (session == nil) {
+        NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+        session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+    }
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+
+    request.HTTPMethod = @"GET";
+    
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error != nil) {
+            completionBlock(nil, error);
+        }
+        else {
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            
+            if (error != nil) {
                 completionBlock(nil, error);
             }
+            else {
+                if ([json isKindOfClass:[NSDictionary class]]) {
+                    NSDictionary *dictionary = (NSDictionary *)json;
+                    if ([dictionary[@"success"] boolValue]) {
+                        completionBlock(dictionary[@"data"], nil);
+                    }
+                    else {
+                        NSDictionary *userInfo = @{NSLocalizedDescriptionKey : dictionary[@"message"]};
+                        NSError *error = [NSError errorWithDomain:@"Backend" code:101 userInfo:userInfo];
+                        completionBlock(nil, error);
+                    }
+                }
+            }
         }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        completionBlock(nil, error);
     }];
-    [operation start];
+    [task resume];
+}
+
++ (NSURL *)appendQueryParameters:(NSDictionary *)params toURL:(NSURL *)url {
+    NSURLComponents *components = [[NSURLComponents alloc] initWithURL:url resolvingAgainstBaseURL:NO];
+    
+    NSMutableArray<NSURLQueryItem *> *queryItems = @[].mutableCopy;
+    
+    for (NSString *name in params) {
+        NSURLQueryItem *item = [[NSURLQueryItem alloc] initWithName:name value:[params[name] stringValue]];
+        [queryItems addObject:item];
+    }
+    
+    components.queryItems = queryItems;
+    
+    return components.URL;
 }
 
 @end

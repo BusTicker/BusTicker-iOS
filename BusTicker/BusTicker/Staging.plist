@@ -7,9 +7,9 @@
 		<key>BaseURL</key>
 		<string>http://localhost:3000</string>
 		<key>DefaultLatitude</key>
-		<real>43.048912100000003</real>
+		<real>43.0489121</real>
 		<key>DefaultLongitude</key>
-		<real>-87.904047500000004</real>
+		<real>-87.9040475</real>
 		<key>DefaultRadius</key>
 		<integer>1000</integer>
 	</dict>
@@ -18,7 +18,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>io.github.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -52,5 +52,10 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
