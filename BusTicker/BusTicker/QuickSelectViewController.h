@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuickSelectViewController : UIViewController
+#import "BaseViewController.h"
+
+@interface QuickSelectViewController : BaseViewController
 
 @end

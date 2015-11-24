@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusStopPickerViewController : UIViewController
+#import "BaseViewController.h"
+
+@interface BusStopPickerViewController : BaseViewController
 
 @end
