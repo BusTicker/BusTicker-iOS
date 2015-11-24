@@ -69,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062C988024FA59BEC07CF564 /* Pods-Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Staging.release.xcconfig"; path = "Pods/Target Support Files/Pods-Staging/Pods-Staging.release.xcconfig"; sourceTree = "<group>"; };
 		2610565C19CE7DF6007B243E /* PulsingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingView.h; sourceTree = "<group>"; };
 		2610565D19CE7DF6007B243E /* PulsingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingView.m; sourceTree = "<group>"; };
 		2610566019CE8C80007B243E /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
@@ -119,9 +120,10 @@
 		26BD771719CDE87400B00969 /* BusTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusTickerTests.m; sourceTree = "<group>"; };
 		26BD773119CDEA8400B00969 /* Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BD773319CDEC2F00B00969 /* Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Staging.plist; sourceTree = "<group>"; };
-		CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		4D49B2BC89D1FD040FFD13C9 /* Pods-Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Staging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Staging/Pods-Staging.debug.xcconfig"; sourceTree = "<group>"; };
+		5F827D824B401CCB7165DEB1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9010B05072AB52C54E8A9A9D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F598F9476BD1455DA0B1ECF7 /* libPods-Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Staging.xcconfig"; path = "Pods/Pods-Staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,9 +236,8 @@
 				26BD76FA19CDE87400B00969 /* BusTicker */,
 				26BD771419CDE87400B00969 /* BusTickerTests */,
 				26BD76F919CDE87400B00969 /* Products */,
-				CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */,
-				FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */,
 				8495112D26EA40EFB60CC06F /* Frameworks */,
+				3776E86B51558A517CB0F778 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,6 +298,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3776E86B51558A517CB0F778 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F827D824B401CCB7165DEB1 /* Pods.debug.xcconfig */,
+				9010B05072AB52C54E8A9A9D /* Pods.release.xcconfig */,
+				4D49B2BC89D1FD040FFD13C9 /* Pods-Staging.debug.xcconfig */,
+				062C988024FA59BEC07CF564 /* Pods-Staging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8495112D26EA40EFB60CC06F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +335,7 @@
 				26BD76F619CDE87400B00969 /* Resources */,
 				BD359476D49F4F04BB1AA34A /* Copy Pods Resources */,
 				2669198719CDF30700404F9A /* ShellScript */,
+				A63071CA99076F4E46B4A8FC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,6 +374,7 @@
 				26BD772919CDEA8400B00969 /* Resources */,
 				26BD772D19CDEA8400B00969 /* Copy Pods Resources */,
 				2669198819CDF31800404F9A /* ShellScript */,
+				05709F4BB8A6C1B24A0F284C /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,7 +391,7 @@
 		26BD76F019CDE87400B00969 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = BusTicker;
 				TargetAttributes = {
 					26BD76F719CDE87400B00969 = {
@@ -442,6 +456,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05709F4BB8A6C1B24A0F284C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Staging/Pods-Staging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2669198719CDF30700404F9A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,7 +524,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Staging-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Staging/Pods-Staging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A63071CA99076F4E46B4A8FC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD359476D49F4F04BB1AA34A /* Copy Pods Resources */ = {
@@ -510,7 +554,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8BEFD29560246129EF30493 /* Check Pods Manifest.lock */ = {
@@ -637,6 +681,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -651,7 +696,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -686,7 +731,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -695,26 +740,28 @@
 		};
 		26BD771C19CDE87400B00969 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */;
+			baseConfigurationReference = 5F827D824B401CCB7165DEB1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BusTicker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		26BD771D19CDE87400B00969 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA083B8F565C4E0DB8FB0B75 /* Pods.xcconfig */;
+			baseConfigurationReference = 9010B05072AB52C54E8A9A9D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BusTicker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -733,6 +780,7 @@
 				);
 				INFOPLIST_FILE = BusTickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
 			};
@@ -748,6 +796,7 @@
 				);
 				INFOPLIST_FILE = BusTickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusTicker.app/BusTicker";
 			};
@@ -755,26 +804,28 @@
 		};
 		26BD772F19CDEA8400B00969 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */;
+			baseConfigurationReference = 4D49B2BC89D1FD040FFD13C9 /* Pods-Staging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Staging;
 			};
 			name = Debug;
 		};
 		26BD773019CDEA8400B00969 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD39365C97E04BB087EC72D9 /* Pods-Staging.xcconfig */;
+			baseConfigurationReference = 062C988024FA59BEC07CF564 /* Pods-Staging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/BusTicker/Staging.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Staging;
 			};
 			name = Release;
